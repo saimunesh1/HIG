@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3yS-Vb-hhI" customClass="ClaimsAndPolicyCollectionViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0G-eO-ta1">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="claims-policy" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DmM-Pf-3Qw">
+                                <rect key="frame" x="82" y="35" width="136" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="VUS-2A-b5v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claims &amp; Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="lYl-1F-qp7">
+                                <rect key="frame" x="8" y="127" width="284" height="28"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__submit" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-Dt-cRF">
+                                <rect key="frame" x="20" y="172" width="24" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="9xW-VO-yL8"/>
+                                    <constraint firstAttribute="width" constant="24" id="Pak-5O-DOQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit claims right from the app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dct-jl-KmQ">
+                                <rect key="frame" x="52" y="175" width="240" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__track-progress" translatesAutoresizingMaskIntoConstraints="NO" id="jSU-nP-dmR">
+                                <rect key="frame" x="20" y="207" width="24" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="bSa-Cn-jqy"/>
+                                    <constraint firstAttribute="height" constant="24" id="gq4-Te-3iu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your claim status and and get updates on next steps." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfH-UY-ard">
+                                <rect key="frame" x="52" y="201.5" width="240" height="33"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__view-details" translatesAutoresizingMaskIntoConstraints="NO" id="wtb-np-7OS">
+                                <rect key="frame" x="20" y="241.5" width="24" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="KLJ-Vb-8PM"/>
+                                    <constraint firstAttribute="width" constant="24" id="mMQ-mw-WXl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View policy details anytime." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh1-MP-foe">
+                                <rect key="frame" x="52" y="244.5" width="240" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wtb-np-7OS" firstAttribute="centerY" secondItem="Gh1-MP-foe" secondAttribute="centerY" id="206-UB-l2o"/>
+                            <constraint firstItem="jSU-nP-dmR" firstAttribute="leading" secondItem="Y0G-eO-ta1" secondAttribute="leading" constant="20" id="65h-y8-ved"/>
+                            <constraint firstAttribute="trailing" secondItem="dct-jl-KmQ" secondAttribute="trailing" constant="8" id="6vv-Wc-zCx"/>
+                            <constraint firstItem="lYl-1F-qp7" firstAttribute="leading" secondItem="Y0G-eO-ta1" secondAttribute="leading" constant="8" id="9YW-fD-dHZ"/>
+                            <constraint firstItem="DmM-Pf-3Qw" firstAttribute="centerX" secondItem="Y0G-eO-ta1" secondAttribute="centerX" id="AZv-7k-xNu"/>
+                            <constraint firstAttribute="trailing" secondItem="Gh1-MP-foe" secondAttribute="trailing" constant="8" id="Enh-jE-gzW"/>
+                            <constraint firstAttribute="trailing" secondItem="lYl-1F-qp7" secondAttribute="trailing" constant="8" id="Eph-FV-uJj"/>
+                            <constraint firstItem="dct-jl-KmQ" firstAttribute="top" secondItem="lYl-1F-qp7" secondAttribute="bottom" constant="20" id="NZj-DA-GnH"/>
+                            <constraint firstItem="dct-jl-KmQ" firstAttribute="leading" secondItem="gdY-Dt-cRF" secondAttribute="trailing" constant="8" id="QGI-TH-aJU"/>
+                            <constraint firstItem="Gh1-MP-foe" firstAttribute="leading" secondItem="wtb-np-7OS" secondAttribute="trailing" constant="8" id="SRu-sh-EgS"/>
+                            <constraint firstAttribute="trailing" secondItem="dct-jl-KmQ" secondAttribute="trailing" constant="8" id="Wb1-Hm-Ya9"/>
+                            <constraint firstAttribute="trailing" secondItem="RfH-UY-ard" secondAttribute="trailing" constant="8" id="Wfh-GQ-Hth"/>
+                            <constraint firstItem="gdY-Dt-cRF" firstAttribute="centerY" secondItem="dct-jl-KmQ" secondAttribute="centerY" id="YYh-Ib-N9v"/>
+                            <constraint firstItem="gdY-Dt-cRF" firstAttribute="leading" secondItem="Y0G-eO-ta1" secondAttribute="leading" constant="20" id="bLP-Tv-r7M"/>
+                            <constraint firstItem="jSU-nP-dmR" firstAttribute="centerY" secondItem="RfH-UY-ard" secondAttribute="centerY" id="ePI-0n-XTp"/>
+                            <constraint firstItem="RfH-UY-ard" firstAttribute="leading" secondItem="jSU-nP-dmR" secondAttribute="trailing" constant="8" id="hO5-0V-xev"/>
+                            <constraint firstItem="RfH-UY-ard" firstAttribute="top" secondItem="dct-jl-KmQ" secondAttribute="bottom" constant="10" id="kTs-6I-yk7"/>
+                            <constraint firstItem="Gh1-MP-foe" firstAttribute="top" secondItem="RfH-UY-ard" secondAttribute="bottom" constant="10" id="lKk-jU-H9X"/>
+                            <constraint firstItem="lYl-1F-qp7" firstAttribute="top" secondItem="DmM-Pf-3Qw" secondAttribute="bottom" constant="10" id="oEl-0o-Kxv"/>
+                            <constraint firstItem="DmM-Pf-3Qw" firstAttribute="top" secondItem="Y0G-eO-ta1" secondAttribute="top" constant="35" id="pdk-Wr-iaE"/>
+                            <constraint firstItem="RfH-UY-ard" firstAttribute="leading" secondItem="jSU-nP-dmR" secondAttribute="trailing" constant="8" id="t7M-jd-zic"/>
+                            <constraint firstItem="dct-jl-KmQ" firstAttribute="leading" secondItem="gdY-Dt-cRF" secondAttribute="trailing" constant="8" id="uCc-a9-etj"/>
+                            <constraint firstItem="wtb-np-7OS" firstAttribute="leading" secondItem="Y0G-eO-ta1" secondAttribute="leading" constant="20" id="xio-c9-0Ow"/>
+                            <constraint firstItem="Gh1-MP-foe" firstAttribute="leading" secondItem="wtb-np-7OS" secondAttribute="trailing" constant="8" id="xxT-uc-4K0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Y0G-eO-ta1" secondAttribute="trailing" id="AiG-5Q-c65"/>
+                <constraint firstAttribute="bottom" secondItem="Y0G-eO-ta1" secondAttribute="bottom" id="CR0-3t-eU7"/>
+                <constraint firstItem="Y0G-eO-ta1" firstAttribute="leading" secondItem="3yS-Vb-hhI" secondAttribute="leading" id="Sgx-EH-Oio"/>
+                <constraint firstItem="Y0G-eO-ta1" firstAttribute="top" secondItem="3yS-Vb-hhI" secondAttribute="top" id="Tcx-gV-qjF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="0Lm-5z-aBs"/>
+            <size key="customSize" width="297" height="182"/>
+            <connections>
+                <outlet property="titleLabel" destination="lYl-1F-qp7" id="c3n-O6-R7R"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-55"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="24px__submit" width="24" height="24"/>
+        <image name="24px__track-progress" width="24" height="24"/>
+        <image name="24px__view-details" width="24" height="24"/>
+        <image name="claims-policy" width="136" height="82"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="VehiclePickCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8S-Ab-QnV">
+                        <rect key="frame" x="12" y="11" width="76" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="6yn-Q4-ogs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select vehicle" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5Q-95-g5C">
+                        <rect key="frame" x="214" y="11" width="100" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpH-op-PMr">
+                        <rect key="frame" x="12" y="36" width="302" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="License Plate" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq0-K6-abC">
+                        <rect key="frame" x="12" y="33.5" width="302" height="19.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zpH-op-PMr" firstAttribute="top" secondItem="r5Q-95-g5C" secondAttribute="bottom" constant="3" id="3u7-Hb-gXy"/>
+                    <constraint firstItem="r5Q-95-g5C" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m8S-Ab-QnV" secondAttribute="trailing" constant="8" id="54H-NF-pRP"/>
+                    <constraint firstAttribute="bottom" secondItem="Vq0-K6-abC" secondAttribute="bottom" constant="10.5" id="7OD-u5-Hmu"/>
+                    <constraint firstItem="r5Q-95-g5C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="J8a-ql-ZFA"/>
+                    <constraint firstAttribute="trailing" secondItem="r5Q-95-g5C" secondAttribute="trailing" constant="6" id="Lba-LD-AQ3"/>
+                    <constraint firstItem="Vq0-K6-abC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="MgE-Mk-cFj"/>
+                    <constraint firstAttribute="trailing" secondItem="zpH-op-PMr" secondAttribute="trailing" constant="6" id="Qqd-VP-4eS"/>
+                    <constraint firstItem="m8S-Ab-QnV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="U1N-Sw-Xio"/>
+                    <constraint firstItem="zpH-op-PMr" firstAttribute="top" secondItem="m8S-Ab-QnV" secondAttribute="bottom" constant="3" id="VfC-1f-99c"/>
+                    <constraint firstItem="Vq0-K6-abC" firstAttribute="top" secondItem="r5Q-95-g5C" secondAttribute="bottom" constant="0.5" id="aSM-G7-Qvb"/>
+                    <constraint firstItem="zpH-op-PMr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="b1q-8d-wxm"/>
+                    <constraint firstAttribute="bottom" secondItem="zpH-op-PMr" secondAttribute="bottom" constant="10.5" id="dqF-4X-kfy"/>
+                    <constraint firstItem="m8S-Ab-QnV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="suc-xS-eBc"/>
+                    <constraint firstAttribute="trailing" secondItem="Vq0-K6-abC" secondAttribute="trailing" constant="6" id="uMn-Lo-2wk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="errorLabel" destination="zpH-op-PMr" id="ZpR-o6-Xnx"/>
+                <outlet property="titleLabel" destination="m8S-Ab-QnV" id="ZnB-Fi-tVH"/>
+                <outlet property="valueField" destination="r5Q-95-g5C" id="ANi-aW-PEi"/>
+                <outlet property="valueSubField" destination="Vq0-K6-abC" id="psy-nH-O6p"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="44"/>
+        </tableViewCell>
+    </objects>
+</document>

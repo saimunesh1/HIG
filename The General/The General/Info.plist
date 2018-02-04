@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(TG_PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.8</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb131089570874632</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.478265509534-kn0jav5k3ccsth1nhqkee4nj7emgbfeg</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>131089570874632</string>
+	<key>FacebookDisplayName</key>
+	<string>The General</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>The General would like to access the camera to take photos</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Sign in securely and easily</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The General would like to access your device Location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The General would like to access your device Location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The General would like to access your device Location</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>The General would like to access your Photos</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>The General would like to access your Photos</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Bold.ttf</string>
+		<string>OpenSans-BoldItalic.ttf</string>
+		<string>OpenSans-ExtraBold.ttf</string>
+		<string>OpenSans-ExtraBoldItalic.ttf</string>
+		<string>OpenSans-Italic.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-LightItalic.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>OpenSans-SemiBold.ttf</string>
+		<string>OpenSans-SemiBoldItalic.ttf</string>
+	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>36px_id</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>See ID card</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.pgac.thegeneralinsurance.quickactions.see.id.card</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>24px__credit-card</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Make payment</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.pgac.thegeneralinsurance.quickactions.make.payment</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>24px__claim</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Start claims process</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.pgac.thegeneralinsurance.quickactions.start.claims.process</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>36px_quote</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Get quote</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.pgac.thegeneralinsurance.quickactions.get.quote</string>
+		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+</dict>
+</plist>

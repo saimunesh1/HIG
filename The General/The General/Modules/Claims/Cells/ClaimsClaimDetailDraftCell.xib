@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="ClaimsClaimDetailDraftCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqz-xE-CB1" userLabel="Divider View">
+                        <rect key="frame" x="12" y="55" width="296" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="VMi-le-vK0"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sR4-9n-GHL" userLabel="Divider View">
+                        <rect key="frame" x="12" y="110" width="296" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="i19-7A-OqS"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QlE-2u-duV" userLabel="Divider View">
+                        <rect key="frame" x="12" y="165" width="296" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cia-Ne-5xM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accident information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="At4-HY-o2W">
+                        <rect key="frame" x="12" y="16" width="296" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT7-By-oID">
+                        <rect key="frame" x="12" y="72" width="296" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other people involved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbP-rA-c2Y">
+                        <rect key="frame" x="12" y="127" width="296" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete draft" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtm-qu-HP7">
+                        <rect key="frame" x="12" y="182" width="296" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.099857929299999995" blue="0.19934230559999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YlQ-65-9Lv">
+                        <rect key="frame" x="0.0" y="165" width="320" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="PTE-P3-uiW"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didPressDeleteDraft:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jKx-jd-cai"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YlQ-65-9Lv" secondAttribute="trailing" id="12q-1W-4F2"/>
+                    <constraint firstItem="WT7-By-oID" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="1La-bI-x3i"/>
+                    <constraint firstAttribute="trailing" secondItem="yqz-xE-CB1" secondAttribute="trailing" constant="12" id="1qH-yu-yVl"/>
+                    <constraint firstItem="jtm-qu-HP7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="2JY-ZF-V4Q"/>
+                    <constraint firstAttribute="trailing" secondItem="pbP-rA-c2Y" secondAttribute="trailing" constant="12" id="2Uj-16-UZ5"/>
+                    <constraint firstAttribute="trailing" secondItem="sR4-9n-GHL" secondAttribute="trailing" constant="12" id="6Zh-i1-GeD"/>
+                    <constraint firstAttribute="bottom" secondItem="YlQ-65-9Lv" secondAttribute="bottom" constant="0.5" id="7As-NP-5Yx"/>
+                    <constraint firstAttribute="trailing" secondItem="WT7-By-oID" secondAttribute="trailing" constant="12" id="8ZZ-Ro-gDP"/>
+                    <constraint firstItem="QlE-2u-duV" firstAttribute="top" secondItem="sR4-9n-GHL" secondAttribute="bottom" constant="54" id="IbW-e8-Fyl"/>
+                    <constraint firstAttribute="trailing" secondItem="At4-HY-o2W" secondAttribute="trailing" constant="12" id="JPV-Xm-1h1"/>
+                    <constraint firstItem="YlQ-65-9Lv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Mo0-zf-JYo"/>
+                    <constraint firstAttribute="trailing" secondItem="QlE-2u-duV" secondAttribute="trailing" constant="12" id="Wny-9R-u7J"/>
+                    <constraint firstItem="QlE-2u-duV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="XuD-DI-Uxv"/>
+                    <constraint firstItem="At4-HY-o2W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="acw-KV-glY"/>
+                    <constraint firstItem="At4-HY-o2W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ahw-Bz-PiD"/>
+                    <constraint firstAttribute="bottom" secondItem="QlE-2u-duV" secondAttribute="bottom" constant="53.5" id="eor-OM-tGw"/>
+                    <constraint firstItem="pbP-rA-c2Y" firstAttribute="top" secondItem="sR4-9n-GHL" secondAttribute="bottom" constant="16" id="gIW-wx-ScH"/>
+                    <constraint firstItem="pbP-rA-c2Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="gvI-Wo-fza"/>
+                    <constraint firstItem="WT7-By-oID" firstAttribute="top" secondItem="yqz-xE-CB1" secondAttribute="bottom" constant="16" id="hfd-pz-SIk"/>
+                    <constraint firstItem="sR4-9n-GHL" firstAttribute="top" secondItem="yqz-xE-CB1" secondAttribute="bottom" constant="54" id="jJ8-eG-qnP"/>
+                    <constraint firstItem="sR4-9n-GHL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="lec-O5-v48"/>
+                    <constraint firstItem="yqz-xE-CB1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="qae-hU-ifR"/>
+                    <constraint firstItem="yqz-xE-CB1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="55" id="qms-1u-Li4"/>
+                    <constraint firstAttribute="trailing" secondItem="jtm-qu-HP7" secondAttribute="trailing" constant="12" id="shX-uf-jH7"/>
+                    <constraint firstItem="jtm-qu-HP7" firstAttribute="top" secondItem="QlE-2u-duV" secondAttribute="bottom" constant="16" id="t27-GV-ktD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="dividerViews" destination="yqz-xE-CB1" collectionClass="NSMutableArray" id="j2g-HS-Dlj"/>
+                <outletCollection property="dividerViews" destination="sR4-9n-GHL" collectionClass="NSMutableArray" id="aV0-tf-9Dv"/>
+                <outletCollection property="dividerViews" destination="QlE-2u-duV" collectionClass="NSMutableArray" id="bqs-TA-39O"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="37"/>
+        </tableViewCell>
+    </objects>
+</document>

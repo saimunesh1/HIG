@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="286" id="VPq-2d-Cc2" customClass="DidYouKnowLandscapeCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VPq-2d-Cc2" id="A2C-wV-TpQ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="285.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdL-Eh-LKX" userLabel="Biometric Authentication View" customClass="BadgeView" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="10" y="34" width="355" height="231"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="To quickly access your electronic insurance verification, turn your phone to landscape mode anywhere in the app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMX-n2-wOd">
+                                <rect key="frame" x="14" y="208.5" width="327" height="61.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="24px_tip_phone" translatesAutoresizingMaskIntoConstraints="NO" id="FjM-Zx-Hym">
+                                <rect key="frame" x="166" y="88.5" width="24" height="24"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hom-AR-ayg" userLabel="Top Header">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="15"/>
+                                <color key="backgroundColor" red="0.81312191489999996" green="0.90684753659999995" blue="0.87412375210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="800" constant="15" id="YhU-eT-1fE"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="penguin" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-JV-xGY" customClass="RoundedImageView" customModule="The_General" customModuleProvider="target">
+                                <rect key="frame" x="147.5" y="-22.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="800" constant="60" id="UQt-rX-O0J"/>
+                                    <constraint firstAttribute="width" secondItem="XEa-JV-xGY" secondAttribute="height" multiplier="1:1" id="ZJ0-ip-TSj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Did you know?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEY-eI-knP">
+                                <rect key="frame" x="90.5" y="45.5" width="175" height="33"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9324148297" green="0.96510642769999999" blue="0.95270687340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FjM-Zx-Hym" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vEY-eI-knP" secondAttribute="bottom" priority="800" constant="5" id="2wF-BH-zir"/>
+                            <constraint firstItem="FjM-Zx-Hym" firstAttribute="top" secondItem="vEY-eI-knP" secondAttribute="bottom" priority="750" constant="10" id="5D5-cF-H9g"/>
+                            <constraint firstItem="hom-AR-ayg" firstAttribute="top" secondItem="xdL-Eh-LKX" secondAttribute="top" id="90v-Nx-STc"/>
+                            <constraint firstItem="hom-AR-ayg" firstAttribute="leading" secondItem="xdL-Eh-LKX" secondAttribute="leading" id="K9h-nV-pHB"/>
+                            <constraint firstItem="XEa-JV-xGY" firstAttribute="centerY" secondItem="hom-AR-ayg" secondAttribute="centerY" id="MIr-jr-DRI"/>
+                            <constraint firstItem="vEY-eI-knP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XEa-JV-xGY" secondAttribute="bottom" id="S0y-iu-i8L"/>
+                            <constraint firstItem="bMX-n2-wOd" firstAttribute="top" secondItem="FjM-Zx-Hym" secondAttribute="bottom" constant="10" id="URu-ec-ZiA"/>
+                            <constraint firstAttribute="trailing" secondItem="hom-AR-ayg" secondAttribute="trailing" id="VIi-Wh-VQa"/>
+                            <constraint firstAttribute="bottom" secondItem="bMX-n2-wOd" secondAttribute="bottom" constant="25" id="b7T-Vt-liS"/>
+                            <constraint firstItem="FjM-Zx-Hym" firstAttribute="centerX" secondItem="xdL-Eh-LKX" secondAttribute="centerX" id="cW3-zc-IxW"/>
+                            <constraint firstItem="bMX-n2-wOd" firstAttribute="leading" secondItem="xdL-Eh-LKX" secondAttribute="leading" constant="14" id="ekR-i2-oCS"/>
+                            <constraint firstItem="vEY-eI-knP" firstAttribute="centerX" secondItem="xdL-Eh-LKX" secondAttribute="centerX" id="h7B-kp-tWj"/>
+                            <constraint firstItem="vEY-eI-knP" firstAttribute="top" secondItem="XEa-JV-xGY" secondAttribute="bottom" priority="750" constant="8" id="n8t-Wr-W8X"/>
+                            <constraint firstItem="XEa-JV-xGY" firstAttribute="centerX" secondItem="xdL-Eh-LKX" secondAttribute="centerX" id="q3g-FJ-s2I"/>
+                            <constraint firstAttribute="trailing" secondItem="bMX-n2-wOd" secondAttribute="trailing" constant="14" id="qxq-Wp-Wfb"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="badgeImageView" destination="XEa-JV-xGY" id="eqQ-Cp-Zml"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xdL-Eh-LKX" firstAttribute="centerX" secondItem="A2C-wV-TpQ" secondAttribute="centerX" id="EIa-9U-ZXZ"/>
+                    <constraint firstItem="xdL-Eh-LKX" firstAttribute="leading" secondItem="A2C-wV-TpQ" secondAttribute="leading" constant="10" id="J8A-Za-SwP"/>
+                    <constraint firstItem="xdL-Eh-LKX" firstAttribute="top" secondItem="A2C-wV-TpQ" secondAttribute="topMargin" constant="23" id="LqS-bb-jdY"/>
+                    <constraint firstItem="XEa-JV-xGY" firstAttribute="top" secondItem="A2C-wV-TpQ" secondAttribute="top" constant="11.5" id="lWu-es-MXv"/>
+                    <constraint firstAttribute="trailing" secondItem="xdL-Eh-LKX" secondAttribute="trailing" constant="10" id="sco-N3-TOV"/>
+                    <constraint firstAttribute="bottom" secondItem="xdL-Eh-LKX" secondAttribute="bottom" constant="20.5" id="zqy-qn-aB5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="25.5" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="24px_tip_phone" width="24" height="24"/>
+        <image name="penguin" width="50" height="50"/>
+    </resources>
+</document>

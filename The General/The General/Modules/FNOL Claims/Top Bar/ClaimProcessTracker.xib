@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClaimProcessTracker" customModule="The_General" customModuleProvider="target">
+            <connections>
+                <outlet property="carStackView" destination="l0V-Ef-CPk" id="iHL-pT-VLO"/>
+                <outlet property="clipboardButton" destination="Hvn-au-lYW" id="5Rb-Up-rdi"/>
+                <outlet property="clipboardImageView" destination="95a-PI-nAX" id="bLb-Mg-EA4"/>
+                <outlet property="line1View" destination="gDG-RZ-bCf" id="mUW-85-m3o"/>
+                <outlet property="line2View" destination="Uis-P8-6zj" id="ydO-25-5MI"/>
+                <outlet property="pedestrianImageView" destination="cQD-jZ-oeH" id="f8i-0f-T6L"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oGA-0n-6Ec">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDG-RZ-bCf">
+                    <rect key="frame" x="44" y="31" width="74" height="2"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.90196078430000004" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="P41-bf-lgh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uis-P8-6zj">
+                    <rect key="frame" x="256" y="31" width="54" height="2"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.90196078430000004" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="y3W-vW-LH8"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="24px__clipboard" translatesAutoresizingMaskIntoConstraints="NO" id="95a-PI-nAX">
+                    <rect key="frame" x="12" y="20" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="95a-PI-nAX" secondAttribute="height" multiplier="1:1" id="Bm5-UP-YNm"/>
+                        <constraint firstAttribute="width" constant="24" id="sD4-rV-3nD"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="24px__pedestrian" translatesAutoresizingMaskIntoConstraints="NO" id="cQD-jZ-oeH">
+                    <rect key="frame" x="339" y="20" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cQD-jZ-oeH" secondAttribute="height" multiplier="1:1" id="qnS-nh-02y"/>
+                        <constraint firstAttribute="width" constant="24" id="uJa-ZL-lpA"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l0V-Ef-CPk">
+                    <rect key="frame" x="162" y="20" width="50" height="25"/>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvn-au-lYW" userLabel="Clipboard Button">
+                    <rect key="frame" x="12" y="20" width="24" height="24"/>
+                    <connections>
+                        <action selector="didTouchAccidentDetails:" destination="-1" eventType="touchUpInside" id="EIO-xZ-IdA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Uis-P8-6zj" firstAttribute="centerY" secondItem="oGA-0n-6Ec" secondAttribute="centerY" id="0w1-jv-a3k"/>
+                <constraint firstItem="cQD-jZ-oeH" firstAttribute="centerY" secondItem="oGA-0n-6Ec" secondAttribute="centerY" id="2c6-6j-vUq"/>
+                <constraint firstItem="gDG-RZ-bCf" firstAttribute="leading" secondItem="95a-PI-nAX" secondAttribute="trailing" constant="4" id="7tj-vm-RYT"/>
+                <constraint firstItem="l0V-Ef-CPk" firstAttribute="centerX" secondItem="oGA-0n-6Ec" secondAttribute="centerX" id="8OY-Bp-M7G"/>
+                <constraint firstItem="Hvn-au-lYW" firstAttribute="leading" secondItem="95a-PI-nAX" secondAttribute="leading" id="Eeq-6d-t8G"/>
+                <constraint firstItem="Hvn-au-lYW" firstAttribute="bottom" secondItem="95a-PI-nAX" secondAttribute="bottom" id="Et3-Gg-p9W"/>
+                <constraint firstItem="l0V-Ef-CPk" firstAttribute="leading" secondItem="gDG-RZ-bCf" secondAttribute="trailing" constant="4" id="I27-z8-qsn"/>
+                <constraint firstItem="Uis-P8-6zj" firstAttribute="leading" secondItem="l0V-Ef-CPk" secondAttribute="trailing" constant="4" id="JZd-0C-gBP"/>
+                <constraint firstAttribute="trailing" secondItem="cQD-jZ-oeH" secondAttribute="trailing" constant="12" id="Ozf-AP-w2k"/>
+                <constraint firstItem="Hvn-au-lYW" firstAttribute="top" secondItem="95a-PI-nAX" secondAttribute="top" id="Rqq-kc-lXl"/>
+                <constraint firstItem="95a-PI-nAX" firstAttribute="centerY" secondItem="oGA-0n-6Ec" secondAttribute="centerY" id="Tvu-OZ-eKJ"/>
+                <constraint firstItem="l0V-Ef-CPk" firstAttribute="centerY" secondItem="oGA-0n-6Ec" secondAttribute="centerY" id="Uv4-lj-aWb"/>
+                <constraint firstItem="cQD-jZ-oeH" firstAttribute="leading" secondItem="Uis-P8-6zj" secondAttribute="trailing" constant="4" id="YUw-6e-c2c"/>
+                <constraint firstItem="Hvn-au-lYW" firstAttribute="trailing" secondItem="95a-PI-nAX" secondAttribute="trailing" id="ZV3-VV-D3Y"/>
+                <constraint firstItem="95a-PI-nAX" firstAttribute="leading" secondItem="oGA-0n-6Ec" secondAttribute="leading" constant="12" id="oST-TE-NTk"/>
+                <constraint firstItem="gDG-RZ-bCf" firstAttribute="centerY" secondItem="oGA-0n-6Ec" secondAttribute="centerY" id="tOU-gO-AMU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="4.5" y="-282.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="24px__clipboard" width="24" height="24"/>
+        <image name="24px__pedestrian" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="H3K-to-GBv" customClass="FullPolicyInfoCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H3K-to-GBv" id="lCY-0T-tZs">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="N2L-QK-sTf" userLabel="Title Stack">
+                        <rect key="frame" x="12" y="27" width="429" height="19.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJB-OC-L6c">
+                                <rect key="frame" x="0.0" y="0.0" width="214.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Policy Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBF-xa-eW6">
+                                <rect key="frame" x="214.5" y="0.0" width="214.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VPR-h2-PLb" userLabel="Details Stack">
+                        <rect key="frame" x="12" y="78" width="429" height="27.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-UV-6FP">
+                                <rect key="frame" x="0.0" y="0.0" width="214.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmv-4N-l9F">
+                                <rect key="frame" x="214.5" y="0.0" width="214.5" height="27.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VPR-h2-PLb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="N2L-QK-sTf" secondAttribute="bottom" constant="9" id="JEo-c5-itX"/>
+                    <constraint firstAttribute="right" secondItem="VPR-h2-PLb" secondAttribute="rightMargin" constant="12" id="Qre-eW-RxG"/>
+                    <constraint firstItem="N2L-QK-sTf" firstAttribute="top" secondItem="lCY-0T-tZs" secondAttribute="top" constant="27" id="ROY-lZ-gye"/>
+                    <constraint firstAttribute="bottom" secondItem="VPR-h2-PLb" secondAttribute="bottom" constant="8" id="T8q-Xt-01F"/>
+                    <constraint firstItem="N2L-QK-sTf" firstAttribute="leading" secondItem="lCY-0T-tZs" secondAttribute="leading" constant="12" id="UNO-dv-jGK"/>
+                    <constraint firstItem="VPR-h2-PLb" firstAttribute="leading" secondItem="lCY-0T-tZs" secondAttribute="leading" constant="12" id="fQF-AA-TaH"/>
+                    <constraint firstAttribute="trailing" secondItem="N2L-QK-sTf" secondAttribute="trailing" constant="12" id="mbI-z9-za4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblInsuredTitle" destination="eJB-OC-L6c" id="DHj-d8-c1C"/>
+                <outlet property="lblInsuredValue" destination="2Qr-UV-6FP" id="tXC-Ex-0gg"/>
+                <outlet property="lblPolicyTitle" destination="TBF-xa-eW6" id="gbE-BD-jcR"/>
+                <outlet property="lblPolicyValue" destination="bmv-4N-l9F" id="uI8-7V-Tz5"/>
+            </connections>
+            <point key="canvasLocation" x="-107" y="-183"/>
+        </tableViewCell>
+    </objects>
+</document>

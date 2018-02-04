@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="203" id="RLP-mI-SWM" customClass="PaymentDueCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="464" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RLP-mI-SWM" id="Iog-kP-XLT">
+                <rect key="frame" x="0.0" y="0.0" width="464" height="202.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Current amount due before August 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-rj-8ge">
+                        <rect key="frame" x="12" y="12" width="440" height="15.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="$108.38" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-p0-7CM">
+                        <rect key="frame" x="12" y="35.5" width="440" height="68.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="50"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxE-TW-5Ei">
+                        <rect key="frame" x="167" y="120" width="131" height="42"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="1cP-tO-HYR"/>
+                            <constraint firstAttribute="width" constant="131" id="w6B-9J-kco"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <inset key="contentEdgeInsets" minX="32" minY="0.0" maxX="32" maxY="0.0"/>
+                        <state key="normal" title="Pay Now">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="payNowTouched:" destination="RLP-mI-SWM" eventType="touchUpInside" id="XPL-t9-LAG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dhY-p0-7CM" firstAttribute="leading" secondItem="Iog-kP-XLT" secondAttribute="leading" constant="12" id="468-6b-w7O"/>
+                    <constraint firstItem="MM5-rj-8ge" firstAttribute="leading" secondItem="Iog-kP-XLT" secondAttribute="leading" constant="12" id="5uc-m6-o5V"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WxE-TW-5Ei" secondAttribute="bottom" constant="30" id="6r5-7D-VgT"/>
+                    <constraint firstAttribute="trailing" secondItem="dhY-p0-7CM" secondAttribute="trailing" constant="12" id="Blf-QP-KVa"/>
+                    <constraint firstItem="WxE-TW-5Ei" firstAttribute="centerX" secondItem="Iog-kP-XLT" secondAttribute="centerX" id="HOZ-Cp-caE"/>
+                    <constraint firstItem="MM5-rj-8ge" firstAttribute="centerX" secondItem="Iog-kP-XLT" secondAttribute="centerX" id="I3R-CX-PoK"/>
+                    <constraint firstItem="MM5-rj-8ge" firstAttribute="top" secondItem="Iog-kP-XLT" secondAttribute="top" constant="12" id="Rmf-Zx-1QO"/>
+                    <constraint firstItem="WxE-TW-5Ei" firstAttribute="top" secondItem="dhY-p0-7CM" secondAttribute="bottom" constant="16" id="TJ2-kK-crC"/>
+                    <constraint firstItem="dhY-p0-7CM" firstAttribute="centerX" secondItem="Iog-kP-XLT" secondAttribute="centerX" id="m9n-Bu-srf"/>
+                    <constraint firstAttribute="trailing" secondItem="MM5-rj-8ge" secondAttribute="trailing" constant="12" id="q9M-Bk-NMV"/>
+                    <constraint firstItem="dhY-p0-7CM" firstAttribute="top" secondItem="MM5-rj-8ge" secondAttribute="bottom" constant="8" id="yoM-Sp-zGM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblPaymentDue" destination="dhY-p0-7CM" id="Lju-Yz-kvf"/>
+                <outlet property="lblTitle" destination="MM5-rj-8ge" id="uy6-MU-Xtn"/>
+                <outlet property="paynowBtn" destination="WxE-TW-5Ei" id="pbY-EJ-s8x"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="91.5"/>
+        </tableViewCell>
+    </objects>
+</document>

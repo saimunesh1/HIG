@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Site Identifier</key>
+	<string>S9885212559</string>
+	<key>Site Version</key>
+	<string>2.0</string>
+	<key>Base URL</key>
+	<string>https://api.paynearme-sandbox.com/api/</string>
+</dict>
+</plist>

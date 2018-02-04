@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="MakePaymentCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="481" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="481" height="219.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VjS-Dj-KuE">
+                        <rect key="frame" x="0.0" y="15" width="0.0" height="134.66666666666666"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SP2-mo-GyV">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="134.66666666666666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum amount due before Aug 5" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mN0-Rh-H8n">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="62.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hag-9M-yMP">
+                                        <rect key="frame" x="0.0" y="72.333333333333329" width="0.0" height="62.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OTa-e2-toI">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="134.66666666666666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full payoff and renewal down payment" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpq-Jw-DkQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="62.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-PP-QfE">
+                                        <rect key="frame" x="0.0" y="72.333333333333329" width="0.0" height="62.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-l5-fuF">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="134.66666666666666"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full payoff and renwall in full" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-2f-tfq">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="62.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlP-Vn-9wJ">
+                                        <rect key="frame" x="0.0" y="72.333333333333329" width="0.0" height="62.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpE-f0-ifa">
+                        <rect key="frame" x="0.0" y="157.66666666666666" width="227" height="42"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="227" id="4UM-jU-TbU"/>
+                            <constraint firstAttribute="height" constant="42" id="Lvg-vZ-0cb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <inset key="contentEdgeInsets" minX="32" minY="0.0" maxX="32" maxY="0.0"/>
+                        <state key="normal" title="Make a Payment">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnTouched:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iol-SE-3Sj"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VjS-Dj-KuE" secondAttribute="bottom" constant="70" id="JBB-E9-iJP"/>
+                    <constraint firstItem="WpE-f0-ifa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="N7E-uW-WtS"/>
+                    <constraint firstItem="VjS-Dj-KuE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="PqS-BN-AEP"/>
+                    <constraint firstAttribute="bottom" secondItem="WpE-f0-ifa" secondAttribute="bottom" constant="20" id="Vc2-AY-Mpr"/>
+                    <constraint firstAttribute="trailing" secondItem="VjS-Dj-KuE" secondAttribute="trailing" constant="15" id="gkv-yi-yF0"/>
+                    <constraint firstItem="VjS-Dj-KuE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="h7k-OU-sBg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="AyO-Jw-sob"/>
+            <connections>
+                <outlet property="btnMakePayment" destination="WpE-f0-ifa" id="7X6-9W-5NN"/>
+                <outlet property="lblFullPayoff" destination="TlP-Vn-9wJ" id="tRf-KC-eRs"/>
+                <outlet property="lblFullPayoffDesc" destination="IV0-2f-tfq" id="1CB-92-HfZ"/>
+                <outlet property="lblFullRenewal" destination="IK4-PP-QfE" id="MF6-js-8ck"/>
+                <outlet property="lblFullRenewalDesc" destination="Cpq-Jw-DkQ" id="Qtu-Yt-9az"/>
+                <outlet property="lblMinAmountDesc" destination="mN0-Rh-H8n" id="JEO-Up-HZr"/>
+                <outlet property="lblMinAmountDue" destination="hag-9M-yMP" id="RwP-sr-gva"/>
+            </connections>
+            <point key="canvasLocation" x="-37.5" y="221"/>
+        </tableViewCell>
+    </objects>
+</document>

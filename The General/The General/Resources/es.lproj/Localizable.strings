@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  The General
+
+  Created by Gollahalli Chowdappa, Shrikanth (US - New York) on 10/6/17.
+  Copyright © 2017 Deloitte Digital. All rights reserved.
+*/
+
+"atScene.alert.title" = "Are you at Scene?";
+"atScene.alert.message" = "Are you at the scene of the accident?";
+"atScene.alert.option1" = "Yes";
+"atScene.alert.option2" = "No";

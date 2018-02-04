@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="203" id="KGk-i7-Jjw" customClass="LeinHolderCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="203"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9j-Bs-Weu">
+                        <rect key="frame" x="12" y="16" width="314" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-Zh-1XI">
+                        <rect key="frame" x="12" y="54" width="314" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-xb-TWh">
+                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwx-92-gQI">
+                                <rect key="frame" x="-12" y="0.0" width="154.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PJO-Wm-XEg">
+                        <rect key="frame" x="12" y="92" width="314" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Added date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7W-4o-2mq">
+                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6K-rm-JcC">
+                                <rect key="frame" x="-12" y="0.0" width="154.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y50-nq-6zL">
+                        <rect key="frame" x="12" y="130" width="314" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deleted date" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdE-gM-TbN">
+                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-ox-J7x">
+                                <rect key="frame" x="-12" y="0.0" width="154.5" height="22"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="y50-nq-6zL" secondAttribute="trailing" constant="12" id="0o6-dg-ljH"/>
+                    <constraint firstItem="PJO-Wm-XEg" firstAttribute="top" secondItem="Bft-Zh-1XI" secondAttribute="bottom" constant="16" id="2g6-Ue-JBT"/>
+                    <constraint firstItem="Bft-Zh-1XI" firstAttribute="top" secondItem="Y9j-Bs-Weu" secondAttribute="bottom" constant="16" id="6Zf-c8-0yV"/>
+                    <constraint firstAttribute="trailing" secondItem="Y9j-Bs-Weu" secondAttribute="trailing" constant="12" id="INq-bY-QAn"/>
+                    <constraint firstItem="Y9j-Bs-Weu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Ib9-gy-Tdy"/>
+                    <constraint firstAttribute="trailing" secondItem="PJO-Wm-XEg" secondAttribute="trailing" constant="12" id="MkZ-b5-ZUm"/>
+                    <constraint firstAttribute="trailing" secondItem="Bft-Zh-1XI" secondAttribute="trailing" constant="12" id="Sad-1X-1g8"/>
+                    <constraint firstItem="y50-nq-6zL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Xga-18-Nr1"/>
+                    <constraint firstItem="Y9j-Bs-Weu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="hN3-DW-sCW"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="y50-nq-6zL" secondAttribute="bottom" constant="8" id="myX-DF-sjI"/>
+                    <constraint firstItem="PJO-Wm-XEg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="vif-x5-IV9"/>
+                    <constraint firstItem="Bft-Zh-1XI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="wxi-gg-7Mk"/>
+                    <constraint firstItem="y50-nq-6zL" firstAttribute="top" secondItem="PJO-Wm-XEg" secondAttribute="bottom" constant="16" id="xcu-Nf-Hvs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAddedDate" destination="t6K-rm-JcC" id="b9m-gE-iVz"/>
+                <outlet property="lblDeletedDate" destination="aIS-ox-J7x" id="cdx-ia-kyA"/>
+                <outlet property="lblLeinHolder" destination="Y9j-Bs-Weu" id="Sph-y8-rdF"/>
+                <outlet property="lblType" destination="Nwx-92-gQI" id="sTg-g1-JEU"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="7.5"/>
+        </tableViewCell>
+    </objects>
+</document>

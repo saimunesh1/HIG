@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="csM-mL-f3m" customClass="PaymentOptionsCollectionViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCE-am-vtK">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payment-options" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G05-Ro-E3b">
+                                <rect key="frame" x="82" y="35" width="136" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="br6-r2-yHH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Options" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="J2b-TB-6Tf">
+                                <rect key="frame" x="8" y="127" width="284" height="33"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__cash" translatesAutoresizingMaskIntoConstraints="NO" id="g57-T2-Y44">
+                                <rect key="frame" x="20" y="197" width="24" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="FSq-jB-UjF"/>
+                                    <constraint firstAttribute="width" constant="24" id="ne5-lN-XMW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Multiple payment options, including using cash at thousands of locations." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRF-cE-94E">
+                                <rect key="frame" x="52" y="180" width="240" height="57.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__notification" translatesAutoresizingMaskIntoConstraints="NO" id="DCp-Nd-21e">
+                                <rect key="frame" x="20" y="246" width="24" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="eOg-0N-k4i"/>
+                                    <constraint firstAttribute="width" constant="24" id="eRU-tF-BYH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications to help you track payments and due dates." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFl-O6-vbT">
+                                <rect key="frame" x="52" y="247.5" width="240" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__check-circle" translatesAutoresizingMaskIntoConstraints="NO" id="gN4-NN-QGI">
+                                <rect key="frame" x="20" y="285" width="24" height="24"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Vq0-Cv-rZL"/>
+                                    <constraint firstAttribute="width" constant="24" id="VvH-x5-16n"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See payments credited immediately." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3D-c4-ndj">
+                                <rect key="frame" x="52" y="277" width="240" height="38.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z3D-c4-ndj" firstAttribute="leading" secondItem="gN4-NN-QGI" secondAttribute="trailing" constant="8" id="02B-bz-9k2"/>
+                            <constraint firstItem="UFl-O6-vbT" firstAttribute="leading" secondItem="DCp-Nd-21e" secondAttribute="trailing" constant="8" id="0Zn-ab-PUZ"/>
+                            <constraint firstItem="g57-T2-Y44" firstAttribute="centerY" secondItem="SRF-cE-94E" secondAttribute="centerY" id="1YZ-RK-bIR"/>
+                            <constraint firstItem="G05-Ro-E3b" firstAttribute="centerX" secondItem="YCE-am-vtK" secondAttribute="centerX" id="2yT-X4-ejf"/>
+                            <constraint firstItem="gN4-NN-QGI" firstAttribute="leading" secondItem="YCE-am-vtK" secondAttribute="leading" constant="20" id="4Qz-wa-ikV"/>
+                            <constraint firstItem="z3D-c4-ndj" firstAttribute="top" secondItem="UFl-O6-vbT" secondAttribute="bottom" constant="10" id="5ff-XA-Wb4"/>
+                            <constraint firstItem="UFl-O6-vbT" firstAttribute="top" secondItem="SRF-cE-94E" secondAttribute="bottom" constant="10" id="6i7-iv-DjA"/>
+                            <constraint firstItem="SRF-cE-94E" firstAttribute="leading" secondItem="g57-T2-Y44" secondAttribute="trailing" constant="8" id="7dI-QD-HZh"/>
+                            <constraint firstAttribute="trailing" secondItem="UFl-O6-vbT" secondAttribute="trailing" constant="8" id="B5K-DF-eM9"/>
+                            <constraint firstItem="DCp-Nd-21e" firstAttribute="centerY" secondItem="UFl-O6-vbT" secondAttribute="centerY" id="Rz7-IL-5jw"/>
+                            <constraint firstItem="SRF-cE-94E" firstAttribute="leading" secondItem="g57-T2-Y44" secondAttribute="trailing" constant="8" id="S3L-2X-ukT"/>
+                            <constraint firstAttribute="trailing" secondItem="J2b-TB-6Tf" secondAttribute="trailing" constant="8" id="VTD-Qf-RfJ"/>
+                            <constraint firstItem="DCp-Nd-21e" firstAttribute="leading" secondItem="YCE-am-vtK" secondAttribute="leading" constant="20" id="dmS-r6-Nlt"/>
+                            <constraint firstAttribute="trailing" secondItem="SRF-cE-94E" secondAttribute="trailing" constant="8" id="jzb-vF-P8U"/>
+                            <constraint firstItem="J2b-TB-6Tf" firstAttribute="top" secondItem="G05-Ro-E3b" secondAttribute="bottom" constant="10" id="k3B-2D-dhz"/>
+                            <constraint firstItem="z3D-c4-ndj" firstAttribute="leading" secondItem="gN4-NN-QGI" secondAttribute="trailing" constant="8" id="l9c-vK-Lse"/>
+                            <constraint firstItem="gN4-NN-QGI" firstAttribute="centerY" secondItem="z3D-c4-ndj" secondAttribute="centerY" id="m0J-Lp-j3C"/>
+                            <constraint firstItem="G05-Ro-E3b" firstAttribute="top" secondItem="YCE-am-vtK" secondAttribute="top" constant="35" id="nJg-lV-YIi"/>
+                            <constraint firstAttribute="trailing" secondItem="z3D-c4-ndj" secondAttribute="trailing" constant="8" id="oB9-VW-kWt"/>
+                            <constraint firstItem="J2b-TB-6Tf" firstAttribute="leading" secondItem="YCE-am-vtK" secondAttribute="leading" constant="8" id="oGT-gb-cEO"/>
+                            <constraint firstItem="SRF-cE-94E" firstAttribute="top" secondItem="J2b-TB-6Tf" secondAttribute="bottom" constant="20" id="s2m-ng-P54"/>
+                            <constraint firstItem="g57-T2-Y44" firstAttribute="leading" secondItem="YCE-am-vtK" secondAttribute="leading" constant="20" id="twx-8C-LCP"/>
+                            <constraint firstItem="UFl-O6-vbT" firstAttribute="leading" secondItem="DCp-Nd-21e" secondAttribute="trailing" constant="8" id="vJI-fI-2VT"/>
+                            <constraint firstAttribute="trailing" secondItem="SRF-cE-94E" secondAttribute="trailing" constant="8" id="yij-uk-3Tf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YCE-am-vtK" secondAttribute="trailing" id="RmZ-OG-D4b"/>
+                <constraint firstAttribute="bottom" secondItem="YCE-am-vtK" secondAttribute="bottom" id="VMR-Fq-Mb4"/>
+                <constraint firstItem="YCE-am-vtK" firstAttribute="leading" secondItem="csM-mL-f3m" secondAttribute="leading" id="iWx-d5-je0"/>
+                <constraint firstItem="YCE-am-vtK" firstAttribute="top" secondItem="csM-mL-f3m" secondAttribute="top" id="oH3-tK-pwd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6ne-mP-NmN"/>
+            <size key="customSize" width="297" height="182"/>
+            <connections>
+                <outlet property="titleLabel" destination="J2b-TB-6Tf" id="PKz-pD-b6L"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-55"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="24px__cash" width="24" height="24"/>
+        <image name="24px__check-circle" width="24" height="24"/>
+        <image name="24px__notification" width="24" height="24"/>
+        <image name="payment-options" width="136" height="82"/>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="117" id="dpc-Sm-UNu" customClass="PreviousQuoteCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dpc-Sm-UNu" id="TrP-HN-DPJ">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1982 DeLorean DMC-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-br-oAv">
+                        <rect key="frame" x="20" y="15" width="180.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January 1, 2017 at 1:00:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gN5-E7-N0t">
+                        <rect key="frame" x="20" y="36.5" width="170" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIV-5l-lOg">
+                        <rect key="frame" x="20" y="61" width="156" height="32"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <state key="normal" title="Continue application">
+                            <color key="titleColor" red="0.0016536357580000001" green="0.47759324310000001" blue="0.32568439840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTouchContinueButton:" destination="dpc-Sm-UNu" eventType="touchUpInside" id="ucc-um-0Jo"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="RWT-yD-dyA">
+                        <rect key="frame" x="431" y="20.5" width="5" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="09q-EC-cqB"/>
+                            <constraint firstAttribute="width" constant="5" id="t8K-UR-1xI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4hM-br-oAv" firstAttribute="top" secondItem="TrP-HN-DPJ" secondAttribute="top" constant="15" id="5Ld-zA-4ay"/>
+                    <constraint firstItem="4hM-br-oAv" firstAttribute="leading" secondItem="TrP-HN-DPJ" secondAttribute="leading" constant="20" id="Crw-ZA-wyv"/>
+                    <constraint firstItem="RWT-yD-dyA" firstAttribute="centerY" secondItem="4hM-br-oAv" secondAttribute="centerY" id="KNx-X8-MDn"/>
+                    <constraint firstItem="oIV-5l-lOg" firstAttribute="top" secondItem="TrP-HN-DPJ" secondAttribute="top" constant="61" id="KdJ-KE-Ddg"/>
+                    <constraint firstItem="gN5-E7-N0t" firstAttribute="top" secondItem="4hM-br-oAv" secondAttribute="bottom" constant="2" id="VKc-kx-wUK"/>
+                    <constraint firstItem="gN5-E7-N0t" firstAttribute="leading" secondItem="TrP-HN-DPJ" secondAttribute="leading" constant="20" id="WeG-fb-Uct"/>
+                    <constraint firstItem="oIV-5l-lOg" firstAttribute="leading" secondItem="TrP-HN-DPJ" secondAttribute="leading" constant="20" id="ltx-wc-hWS"/>
+                    <constraint firstAttribute="trailing" secondItem="RWT-yD-dyA" secondAttribute="trailing" constant="18" id="vhj-Te-d4O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="continueApplicationButton" destination="oIV-5l-lOg" id="gBd-xJ-mAM"/>
+                <outlet property="quoteDateLabel" destination="gN5-E7-N0t" id="ZF8-JP-ocm"/>
+                <outlet property="vehicleLabel" destination="4hM-br-oAv" id="ghV-tr-RwV"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="69.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="5" height="9"/>
+    </resources>
+</document>

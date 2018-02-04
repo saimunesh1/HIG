@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="16G1212" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AddressInfo" representedClassName="AddressInfo" syncable="YES" codeGenerationType="category">
+        <attribute name="addressDetail1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressDetail2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="addressInfos" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <entity name="DriverInfo" representedClassName="DriverInfo" syncable="YES" codeGenerationType="category">
+        <attribute name="addressDetail1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressDetail2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="driverInfos" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <entity name="Field" representedClassName="Field" syncable="YES" codeGenerationType="category">
+        <attribute name="defaultValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="onlyDisplay" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="placeHolder" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="required" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="responseKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="showSubFieldsInNewPage" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showValuesInNewPage" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rules" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Rule" inverseName="field" inverseEntity="Rule" syncable="YES"/>
+        <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="fields" inverseEntity="Section" syncable="YES"/>
+        <relationship name="subFields" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Field" syncable="YES"/>
+        <relationship name="validations" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Value" syncable="YES"/>
+        <relationship name="validValues" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Value" syncable="YES"/>
+    </entity>
+    <entity name="FNOLClaim" representedClassName="FNOLClaim" syncable="YES" codeGenerationType="category">
+        <attribute name="localId" attributeType="String" syncable="YES"/>
+        <attribute name="policyNumber" attributeType="String" syncable="YES"/>
+        <attribute name="referenceNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startedDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submittedDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="damagedParts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FNOLDamagedPart" inverseName="claim" inverseEntity="FNOLDamagedPart" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FNOLImage" inverseName="claim" inverseEntity="FNOLImage" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FNOLPerson" inverseName="claim" inverseEntity="FNOLPerson" syncable="YES"/>
+        <relationship name="responses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FNOLResponse" inverseName="claim" inverseEntity="FNOLResponse" syncable="YES"/>
+        <relationship name="vehicles" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FNOLVehicle" inverseName="claim" inverseEntity="FNOLVehicle" syncable="YES"/>
+    </entity>
+    <entity name="FNOLDamagedPart" representedClassName="FNOLDamagedPart" syncable="YES" codeGenerationType="category">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="claim" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLClaim" inverseName="damagedParts" inverseEntity="FNOLClaim" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FNOLImage" inverseName="damagedPart" inverseEntity="FNOLImage" syncable="YES"/>
+    </entity>
+    <entity name="FNOLImage" representedClassName="FNOLImage" syncable="YES" codeGenerationType="category">
+        <attribute name="imageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="imageId" attributeType="String" syncable="YES"/>
+        <attribute name="imageSize" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isUploaded" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="responseKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailImageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="claim" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLClaim" inverseName="images" inverseEntity="FNOLClaim" syncable="YES"/>
+        <relationship name="damagedPart" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLDamagedPart" inverseName="images" inverseEntity="FNOLDamagedPart" syncable="YES"/>
+    </entity>
+    <entity name="FNOLPerson" representedClassName="FNOLPerson" syncable="YES" codeGenerationType="category">
+        <attribute name="addressDetail1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressDetail2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="injured" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="injuryDetails" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="injuryType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insurancePolicyEffectiveDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="insurancePolicyNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="insuredVehicleVin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDriver" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isFromQuestionnaire" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isInAccident" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isOther" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isOwner" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isPassenger" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isWitness" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transportedFromScene" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="claim" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLClaim" inverseName="people" inverseEntity="FNOLClaim" syncable="YES"/>
+        <relationship name="insuranceImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLImage" syncable="YES"/>
+        <relationship name="licenseImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLImage" syncable="YES"/>
+        <relationship name="vehicle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLVehicle" inverseName="people" inverseEntity="FNOLVehicle" syncable="YES"/>
+    </entity>
+    <entity name="FNOLResponse" representedClassName="FNOLResponse" syncable="YES" codeGenerationType="category">
+        <attribute name="displayValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="responseKey" attributeType="String" syncable="YES"/>
+        <attribute name="value" attributeType="String" syncable="YES"/>
+        <relationship name="claim" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLClaim" inverseName="responses" inverseEntity="FNOLClaim" syncable="YES"/>
+    </entity>
+    <entity name="FNOLVehicle" representedClassName="FNOLVehicle" syncable="YES" codeGenerationType="category">
+        <attribute name="colour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="damageSeverity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="indexInClaim" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="licensePlate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riskUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="claim" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLClaim" inverseName="vehicles" inverseEntity="FNOLClaim" syncable="YES"/>
+        <relationship name="driver" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLPerson" syncable="YES"/>
+        <relationship name="licensePlateImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLImage" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLPerson" syncable="YES"/>
+        <relationship name="people" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FNOLPerson" inverseName="vehicle" inverseEntity="FNOLPerson" syncable="YES"/>
+        <relationship name="vinNumberImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="FNOLImage" syncable="YES"/>
+    </entity>
+    <entity name="Page" representedClassName="Page" syncable="YES" codeGenerationType="category">
+        <attribute name="pageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="pages" inverseEntity="Questionnaire" syncable="YES"/>
+        <relationship name="sections" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Section" inverseName="page" inverseEntity="Section" syncable="YES"/>
+    </entity>
+    <entity name="ParentValue" representedClassName="ParentValue" syncable="YES" codeGenerationType="category">
+        <relationship name="rule" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rule" inverseName="parentValues" inverseEntity="Rule" syncable="YES"/>
+        <relationship name="value" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Value" inverseName="parentVal" inverseEntity="Value" syncable="YES"/>
+    </entity>
+    <entity name="Questionnaire" representedClassName="Questionnaire" syncable="YES" codeGenerationType="category">
+        <attribute name="createdDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="policyNumber" attributeType="String" syncable="YES"/>
+        <relationship name="addressInfos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="AddressInfo" inverseName="questionnaire" inverseEntity="AddressInfo" syncable="YES"/>
+        <relationship name="driverInfos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="DriverInfo" inverseName="questionnaire" inverseEntity="DriverInfo" syncable="YES"/>
+        <relationship name="pages" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Page" inverseName="questionnaire" inverseEntity="Page" syncable="YES"/>
+        <relationship name="vehicleInfos" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="VehicleInfo" inverseName="questionnaire" inverseEntity="VehicleInfo" syncable="YES"/>
+    </entity>
+    <entity name="Rule" representedClassName="Rule" syncable="YES" codeGenerationType="category">
+        <attribute name="parentFieldResponseKey" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="field" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Field" inverseName="rules" inverseEntity="Field" syncable="YES"/>
+        <relationship name="parentValues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ParentValue" inverseName="rule" inverseEntity="ParentValue" syncable="YES"/>
+    </entity>
+    <entity name="Section" representedClassName="Section" syncable="YES" codeGenerationType="category">
+        <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sectionOrder" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="showInNewPage" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="fields" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Field" inverseName="section" inverseEntity="Field" syncable="YES"/>
+        <relationship name="page" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Page" inverseName="sections" inverseEntity="Page" syncable="YES"/>
+    </entity>
+    <entity name="Value" representedClassName="Value" syncable="YES" codeGenerationType="category">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="field" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Field" syncable="YES"/>
+        <relationship name="parentVal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ParentValue" inverseName="value" inverseEntity="ParentValue" syncable="YES"/>
+    </entity>
+    <entity name="VehicleInfo" representedClassName="VehicleInfo" syncable="YES" codeGenerationType="category">
+        <attribute name="licensePlate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="make" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="riskUnit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vin" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="vehicleInfos" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AddressInfo" positionX="-711" positionY="23" width="128" height="180"/>
+        <element name="DriverInfo" positionX="-857" positionY="-63" width="128" height="195"/>
+        <element name="Field" positionX="-333" positionY="-25" width="128" height="283"/>
+        <element name="FNOLClaim" positionX="-236" positionY="432" width="128" height="210"/>
+        <element name="FNOLDamagedPart" positionX="36" positionY="513" width="128" height="90"/>
+        <element name="FNOLImage" positionX="-126" positionY="702" width="128" height="165"/>
+        <element name="FNOLPerson" positionX="-720" positionY="381" width="128" height="450"/>
+        <element name="FNOLResponse" positionX="-479" positionY="-99" width="128" height="105"/>
+        <element name="FNOLVehicle" positionX="-344" positionY="675" width="128" height="270"/>
+        <element name="Page" positionX="-423" positionY="-234" width="128" height="105"/>
+        <element name="ParentValue" positionX="-11" positionY="-27" width="128" height="75"/>
+        <element name="Questionnaire" positionX="-749" positionY="-243" width="128" height="135"/>
+        <element name="Rule" positionX="-74" positionY="-171" width="128" height="90"/>
+        <element name="Section" positionX="-261" positionY="-226" width="128" height="120"/>
+        <element name="Value" positionX="-108" positionY="273" width="128" height="105"/>
+        <element name="VehicleInfo" positionX="-380" positionY="291" width="128" height="150"/>
+    </elements>
+</model>

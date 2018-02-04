@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="318" id="kCU-R3-70j" customClass="PolicyInfoCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="318"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kCU-R3-70j" id="YK1-3z-Fdi">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="317.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back, Klaus!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIs-y1-8ed">
+                        <rect key="frame" x="125" y="26" width="125" height="16.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jeg-w6-p6J" userLabel="Policy # Stack View">
+                        <rect key="frame" x="129.5" y="48" width="116.5" height="106.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Policy #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUz-I7-qjt">
+                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="106.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEt-T4-J0b">
+                                <rect key="frame" x="62.5" y="0.0" width="54" height="106.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0016536357580000001" green="0.47759324310000001" blue="0.32568439840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="policyNumberTapped:" destination="kCU-R3-70j" eventType="touchUpInside" id="5lc-bN-MbA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-02-owQ" userLabel="The General View" customClass="PolicyDateStatusView" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="120" y="172.5" width="135" height="135"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="meQ-02-owQ" secondAttribute="height" multiplier="1:1" id="ABe-4F-xOY"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bQe-HA-446" userLabel="Effective Stack View">
+                        <rect key="frame" x="10" y="222" width="110" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Effective" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LE-9r-DUu">
+                                <rect key="frame" x="31.5" y="0.0" width="47.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.22652029991149902" green="0.25439813733100891" blue="0.28770667314529419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 1, 1900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f4-xe-giu">
+                                <rect key="frame" x="19" y="16.5" width="72.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sQt-2M-H0q" userLabel="Expires Stack View">
+                        <rect key="frame" x="255" y="222" width="110" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expires" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GT8-SE-yv4">
+                                <rect key="frame" x="35" y="0.0" width="40.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 1, 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVD-sY-dlK">
+                                <rect key="frame" x="19" y="16.5" width="72.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bQe-HA-446" firstAttribute="leading" secondItem="YK1-3z-Fdi" secondAttribute="leading" constant="10" id="AfL-qq-Ku4"/>
+                    <constraint firstAttribute="bottom" secondItem="meQ-02-owQ" secondAttribute="bottom" constant="10" id="UdS-6D-mgB"/>
+                    <constraint firstItem="meQ-02-owQ" firstAttribute="leading" secondItem="YK1-3z-Fdi" secondAttribute="leading" constant="120" id="ZoM-C7-Ld1"/>
+                    <constraint firstItem="jIs-y1-8ed" firstAttribute="top" secondItem="YK1-3z-Fdi" secondAttribute="topMargin" constant="15" id="acP-pZ-sx8"/>
+                    <constraint firstItem="meQ-02-owQ" firstAttribute="top" secondItem="jeg-w6-p6J" secondAttribute="bottom" constant="18" id="bzW-Tn-IDh"/>
+                    <constraint firstAttribute="trailing" secondItem="meQ-02-owQ" secondAttribute="trailing" constant="120" id="elv-nK-7aJ"/>
+                    <constraint firstItem="jeg-w6-p6J" firstAttribute="centerX" secondItem="YK1-3z-Fdi" secondAttribute="centerX" id="fvx-qa-gbh"/>
+                    <constraint firstItem="jIs-y1-8ed" firstAttribute="centerX" secondItem="YK1-3z-Fdi" secondAttribute="centerX" id="iiP-Qd-i3f"/>
+                    <constraint firstAttribute="trailing" secondItem="sQt-2M-H0q" secondAttribute="trailing" constant="10" id="k9I-Ug-itt"/>
+                    <constraint firstItem="sQt-2M-H0q" firstAttribute="leading" secondItem="meQ-02-owQ" secondAttribute="trailing" id="kci-fd-xq8"/>
+                    <constraint firstItem="jeg-w6-p6J" firstAttribute="top" secondItem="jIs-y1-8ed" secondAttribute="bottom" constant="5" id="lbh-9v-QJS"/>
+                    <constraint firstItem="meQ-02-owQ" firstAttribute="centerY" secondItem="bQe-HA-446" secondAttribute="centerY" id="moJ-Z1-TFt"/>
+                    <constraint firstItem="meQ-02-owQ" firstAttribute="centerX" secondItem="YK1-3z-Fdi" secondAttribute="centerX" id="naB-ki-Vwm"/>
+                    <constraint firstItem="sQt-2M-H0q" firstAttribute="centerY" secondItem="meQ-02-owQ" secondAttribute="centerY" id="oeT-Eg-KTs"/>
+                    <constraint firstItem="meQ-02-owQ" firstAttribute="leading" secondItem="bQe-HA-446" secondAttribute="trailing" id="wTE-rX-Ig8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="effectiveDateLabel" destination="5f4-xe-giu" id="8BF-lW-X1Y"/>
+                <outlet property="expirationDateLabel" destination="bVD-sY-dlK" id="6tv-vA-Xth"/>
+                <outlet property="expirationDatePromptLabel" destination="GT8-SE-yv4" id="g9k-XR-xIH"/>
+                <outlet property="policyDateStatusView" destination="meQ-02-owQ" id="Xx5-nG-m30"/>
+                <outlet property="policyNumberButton" destination="JEt-T4-J0b" id="675-4l-Ktf"/>
+                <outlet property="welcomeLabel" destination="jIs-y1-8ed" id="AkZ-0h-mde"/>
+            </connections>
+            <point key="canvasLocation" x="-107.5" y="164"/>
+        </tableViewCell>
+    </objects>
+</document>

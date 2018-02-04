@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="458" id="Wmh-eJ-2NY" customClass="GetQuoteCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wmh-eJ-2NY" id="C04-KS-aR2">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="457.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfv-2y-sJw" customClass="DashboardBoxView" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="355" height="437.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Quotes"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMX-if-P1u">
+                        <rect key="frame" x="11" y="41" width="353" height="406.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotes" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-NW-xVi">
+                                <rect key="frame" x="121" y="20" width="110" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="4F4-9z-Zu7"/>
+                                    <constraint firstAttribute="width" constant="110" id="bkg-j3-Xzy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgP-V3-ruB">
+                                <rect key="frame" x="21" y="76" width="310.5" height="65.5"/>
+                                <string key="text">Getting a quick free quote from
+The General takes just a few simple steps.
+Let's get started!</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NgP-V3-ruB" firstAttribute="centerX" secondItem="sMX-if-P1u" secondAttribute="centerX" id="0H4-Hj-R5b"/>
+                            <constraint firstItem="dYh-NW-xVi" firstAttribute="top" secondItem="sMX-if-P1u" secondAttribute="top" constant="20" id="BMC-y3-tGy"/>
+                            <constraint firstItem="NgP-V3-ruB" firstAttribute="top" secondItem="dYh-NW-xVi" secondAttribute="bottom" constant="20" id="ZsZ-ah-7zo"/>
+                            <constraint firstItem="dYh-NW-xVi" firstAttribute="centerX" secondItem="sMX-if-P1u" secondAttribute="centerX" id="kFu-cO-gAI"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxr-n1-Ys4" userLabel="Quote me now" customClass="CustomButton" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="119.5" y="286" width="135" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="Ijh-WS-E1V"/>
+                            <constraint firstAttribute="width" constant="135" id="J5z-aO-svx"/>
+                        </constraints>
+                        <state key="normal" title="Get a quote">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didTouchQuoteButton:" destination="Wmh-eJ-2NY" eventType="touchUpInside" id="k2T-ak-ysm"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="You can also get a quote by phone." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gfm-P7-7YQ">
+                        <rect key="frame" x="58" y="387" width="259.5" height="21"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sxr-n1-Ys4" firstAttribute="centerX" secondItem="C04-KS-aR2" secondAttribute="centerX" id="07s-kd-Edm"/>
+                    <constraint firstItem="sMX-if-P1u" firstAttribute="leading" secondItem="C04-KS-aR2" secondAttribute="leading" constant="11" id="126-7X-ZHI"/>
+                    <constraint firstAttribute="trailing" secondItem="sMX-if-P1u" secondAttribute="trailing" constant="11" id="DHy-cO-UJL"/>
+                    <constraint firstItem="sMX-if-P1u" firstAttribute="top" secondItem="C04-KS-aR2" secondAttribute="top" constant="41" id="E1O-q8-PKE"/>
+                    <constraint firstAttribute="trailing" secondItem="mfv-2y-sJw" secondAttribute="trailing" constant="10" id="KJY-Yy-UjY"/>
+                    <constraint firstAttribute="bottom" secondItem="Gfm-P7-7YQ" secondAttribute="bottom" constant="30" id="N86-V6-QFE"/>
+                    <constraint firstItem="sxr-n1-Ys4" firstAttribute="top" secondItem="NgP-V3-ruB" secondAttribute="bottom" constant="25" id="Nrx-Se-3O8"/>
+                    <constraint firstItem="mfv-2y-sJw" firstAttribute="leading" secondItem="C04-KS-aR2" secondAttribute="leading" constant="10" id="Y0a-yW-IDs"/>
+                    <constraint firstItem="mfv-2y-sJw" firstAttribute="top" secondItem="C04-KS-aR2" secondAttribute="top" constant="10" id="i1O-ha-gCV"/>
+                    <constraint firstAttribute="bottom" secondItem="mfv-2y-sJw" secondAttribute="bottom" constant="10" id="n3I-Ad-kHn"/>
+                    <constraint firstAttribute="bottom" secondItem="sMX-if-P1u" secondAttribute="bottom" constant="10" id="nz7-Ke-h7d"/>
+                    <constraint firstItem="Gfm-P7-7YQ" firstAttribute="top" secondItem="sxr-n1-Ys4" secondAttribute="bottom" constant="20" id="rVy-eP-SEc"/>
+                    <constraint firstItem="Gfm-P7-7YQ" firstAttribute="centerX" secondItem="C04-KS-aR2" secondAttribute="centerX" id="xEI-hR-Ede"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dashboardBoxView" destination="mfv-2y-sJw" id="O0M-xT-Vam"/>
+                <outlet property="quoteByPhoneLabel" destination="Gfm-P7-7YQ" id="lOd-CU-gaX"/>
+            </connections>
+            <point key="canvasLocation" x="-147.5" y="295"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="quotes" width="165" height="76"/>
+    </resources>
+</document>

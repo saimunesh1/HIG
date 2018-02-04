@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="wAX-3E-fCj" customClass="PhotosCollectionViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcL-0Y-aPB">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capture-photos" highlightedImage="capture-photos" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2v-du-khD">
+                                <rect key="frame" x="82" y="35" width="136" height="64"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capture Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="qW5-iv-fup">
+                                <rect key="frame" x="13" y="120" width="274" height="35"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Without moving your vehicle, take photos of your vehicle and the accident scene to submit during the claims process." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YzR-eX-nCz">
+                                <rect key="frame" x="13" y="158" width="274" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="cof-Kl-onW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1K-30-r6N">
+                                <rect key="frame" x="65" y="383" width="170" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="J46-29-kfb"/>
+                                    <constraint firstAttribute="width" constant="170" id="kjG-WZ-tl1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="18"/>
+                                <state key="normal" title="Add Photos">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.47450980390000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchButton:" destination="wAX-3E-fCj" eventType="touchUpInside" id="Dgr-BE-OTP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w1K-30-r6N" secondAttribute="trailing" constant="65" id="E7W-nP-ffj"/>
+                            <constraint firstItem="YzR-eX-nCz" firstAttribute="leading" secondItem="YcL-0Y-aPB" secondAttribute="leading" constant="13" id="HaK-Ek-xtv"/>
+                            <constraint firstItem="j2v-du-khD" firstAttribute="top" secondItem="YcL-0Y-aPB" secondAttribute="top" constant="35" id="KVb-UG-xkT"/>
+                            <constraint firstAttribute="trailing" secondItem="j2v-du-khD" secondAttribute="trailing" constant="82" id="LRn-ZW-0f8"/>
+                            <constraint firstItem="qW5-iv-fup" firstAttribute="leading" secondItem="YcL-0Y-aPB" secondAttribute="leading" constant="13" id="NLc-T2-BPg"/>
+                            <constraint firstItem="YzR-eX-nCz" firstAttribute="top" secondItem="qW5-iv-fup" secondAttribute="bottom" constant="3" id="Oei-Jv-Y9E"/>
+                            <constraint firstItem="qW5-iv-fup" firstAttribute="top" secondItem="j2v-du-khD" secondAttribute="bottom" constant="21" id="cdm-Qd-GAr"/>
+                            <constraint firstAttribute="bottom" secondItem="w1K-30-r6N" secondAttribute="bottom" constant="19" id="ipa-yZ-Lge"/>
+                            <constraint firstItem="YzR-eX-nCz" firstAttribute="centerX" secondItem="w1K-30-r6N" secondAttribute="centerX" id="mXE-pT-1dW"/>
+                            <constraint firstItem="w1K-30-r6N" firstAttribute="leading" secondItem="YcL-0Y-aPB" secondAttribute="leading" constant="65" id="nhW-19-es6"/>
+                            <constraint firstAttribute="trailing" secondItem="qW5-iv-fup" secondAttribute="trailing" constant="13" id="ryl-M7-UPg"/>
+                            <constraint firstItem="j2v-du-khD" firstAttribute="leading" secondItem="YcL-0Y-aPB" secondAttribute="leading" constant="82" id="v5p-JV-Vvh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="YcL-0Y-aPB" firstAttribute="leading" secondItem="wAX-3E-fCj" secondAttribute="leading" id="4Jt-cR-rCM"/>
+                <constraint firstAttribute="bottom" secondItem="YcL-0Y-aPB" secondAttribute="bottom" id="Rz9-zu-iDZ"/>
+                <constraint firstAttribute="trailing" secondItem="YcL-0Y-aPB" secondAttribute="trailing" id="b2d-BF-cDN"/>
+                <constraint firstItem="YcL-0Y-aPB" firstAttribute="top" secondItem="wAX-3E-fCj" secondAttribute="top" id="i1x-hy-E8J"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Alt-Gv-6JT"/>
+            <size key="customSize" width="297" height="182"/>
+            <connections>
+                <outlet property="cardButton" destination="w1K-30-r6N" id="35C-xN-0Sx"/>
+                <outlet property="contentLabel" destination="YzR-eX-nCz" id="5Lk-nB-THe"/>
+                <outlet property="titleLabel" destination="qW5-iv-fup" id="8dB-Tg-iTf"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-55"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="capture-photos" width="136" height="64"/>
+    </resources>
+</document>

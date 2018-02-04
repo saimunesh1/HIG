@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="ProgressLineCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="xL1-vY-e0P" userLabel="Effective Stack">
+                        <rect key="frame" x="12" y="19" width="306" height="16.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Effective" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSv-DJ-wr5">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expires" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VA-gN-CXe">
+                                <rect key="frame" x="153" y="0.0" width="153" height="16.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MFQ-En-brT"/>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kb2-ig-V4Z" customClass="PolicyDateCompletionLineView" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="12" y="51" width="306" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="MF5-Qw-Rdz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9x3-55-CGR"/>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MFx-eK-a8v" userLabel="Dates Stack">
+                        <rect key="frame" x="12" y="84" width="306" height="19.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH5-wQ-N5b">
+                                <rect key="frame" x="0.0" y="0.0" width="153" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wo8-ES-4Zm">
+                                <rect key="frame" x="153" y="0.0" width="153" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DN5-MC-uoD"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xL1-vY-e0P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="99J-rJ-Huh"/>
+                    <constraint firstItem="Kb2-ig-V4Z" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xL1-vY-e0P" secondAttribute="bottom" constant="10" id="ByG-PS-yXj"/>
+                    <constraint firstItem="xL1-vY-e0P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="SIN-eM-Sx2"/>
+                    <constraint firstItem="MFx-eK-a8v" firstAttribute="top" secondItem="Kb2-ig-V4Z" secondAttribute="bottom" constant="3" id="VXA-X8-SZA"/>
+                    <constraint firstItem="MFx-eK-a8v" firstAttribute="top" secondItem="Kb2-ig-V4Z" secondAttribute="bottom" constant="3" id="Wuv-P3-DLc"/>
+                    <constraint firstItem="Kb2-ig-V4Z" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xL1-vY-e0P" secondAttribute="bottom" constant="3" id="cK0-Vk-Agj"/>
+                    <constraint firstItem="MFx-eK-a8v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="dok-65-fLA"/>
+                    <constraint firstAttribute="trailing" secondItem="MFx-eK-a8v" secondAttribute="trailing" constant="12" id="hEf-Ng-Iwb"/>
+                    <constraint firstAttribute="trailing" secondItem="Kb2-ig-V4Z" secondAttribute="trailing" constant="12" id="nqT-Ez-efF"/>
+                    <constraint firstItem="Kb2-ig-V4Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="q1z-4g-rJm"/>
+                    <constraint firstAttribute="trailing" secondItem="xL1-vY-e0P" secondAttribute="trailing" constant="12" id="tgX-fo-JlD"/>
+                    <constraint firstAttribute="bottom" secondItem="MFx-eK-a8v" secondAttribute="bottom" constant="12" id="z15-PC-HI2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblEffective" destination="KSv-DJ-wr5" id="MdW-x6-8lB"/>
+                <outlet property="lblEndDate" destination="Wo8-ES-4Zm" id="7dc-J8-4w6"/>
+                <outlet property="lblExpires" destination="6VA-gN-CXe" id="qGM-oQ-vxT"/>
+                <outlet property="lblStartDate" destination="iH5-wQ-N5b" id="Gks-Zk-wc3"/>
+                <outlet property="policyDateStatus" destination="Kb2-ig-V4Z" id="sq9-TB-dp0"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="45"/>
+        </tableViewCell>
+    </objects>
+</document>

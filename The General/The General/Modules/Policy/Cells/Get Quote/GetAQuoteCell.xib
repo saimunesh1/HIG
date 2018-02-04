@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="216" id="KGk-i7-Jjw" customClass="GetAQuoteCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="215.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The policy expired at..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sm-co-jma">
+                        <rect key="frame" x="48" y="12" width="325" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is currently no insurance coverage under this policy." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebr-Rq-p5F">
+                        <rect key="frame" x="48" y="44" width="325" height="44"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__warning" translatesAutoresizingMaskIntoConstraints="NO" id="FxQ-9u-rgd">
+                        <rect key="frame" x="12" y="12" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="fHD-jj-Zv3"/>
+                            <constraint firstAttribute="height" constant="24" id="suV-7b-lda"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOD-fn-zhG" userLabel="Renew now" customClass="CustomButton" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="142" y="108" width="100" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="Kfq-gZ-8jJ"/>
+                            <constraint firstAttribute="width" constant="100" id="kOB-XM-pGr"/>
+                        </constraints>
+                        <state key="normal" title="Get Quote">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="getQuoteTouched:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NVv-Z0-OhL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QOD-fn-zhG" firstAttribute="top" secondItem="Ebr-Rq-p5F" secondAttribute="bottom" constant="20" id="A02-KP-YO5"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QOD-fn-zhG" secondAttribute="bottom" constant="20" id="GsZ-is-Gzg"/>
+                    <constraint firstItem="4sm-co-jma" firstAttribute="leading" secondItem="FxQ-9u-rgd" secondAttribute="trailing" constant="12" id="Tg2-Jy-2O4"/>
+                    <constraint firstAttribute="trailing" secondItem="Ebr-Rq-p5F" secondAttribute="trailing" constant="12" id="VF4-HE-8Wd"/>
+                    <constraint firstItem="FxQ-9u-rgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="VHP-5P-lty"/>
+                    <constraint firstAttribute="trailing" secondItem="4sm-co-jma" secondAttribute="trailing" constant="12" id="efj-rX-oYQ"/>
+                    <constraint firstItem="FxQ-9u-rgd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="g0Z-yB-0da"/>
+                    <constraint firstItem="QOD-fn-zhG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hsd-f8-J15"/>
+                    <constraint firstItem="Ebr-Rq-p5F" firstAttribute="leading" secondItem="4sm-co-jma" secondAttribute="leading" id="xgZ-uC-uy0"/>
+                    <constraint firstItem="4sm-co-jma" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="yPv-4M-2Tq"/>
+                    <constraint firstItem="Ebr-Rq-p5F" firstAttribute="top" secondItem="4sm-co-jma" secondAttribute="bottom" constant="10" id="zk6-eO-whE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblPolicySubWarning" destination="Ebr-Rq-p5F" id="Pw8-az-nGo"/>
+                <outlet property="lblPolicyWarning" destination="4sm-co-jma" id="fDz-xc-Pa1"/>
+                <outlet property="warningImage" destination="FxQ-9u-rgd" id="9cW-MH-ZbF"/>
+            </connections>
+            <point key="canvasLocation" x="-101.5" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="24px__warning" width="24" height="24"/>
+    </resources>
+</document>

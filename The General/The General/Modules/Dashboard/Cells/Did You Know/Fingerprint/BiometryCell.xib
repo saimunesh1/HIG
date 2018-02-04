@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="350" id="ImH-v0-rya" customClass="BiometryCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ImH-v0-rya" id="lZd-ch-HuC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="349.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59u-e6-1zM" userLabel="Biometric Authentication View" customClass="BadgeView" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="10" y="34" width="355" height="295"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl0-DB-hhz" customClass="CustomButton" customModule="The_General" customModuleProvider="target">
+                                <rect key="frame" x="65" y="209" width="224" height="54"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.47450980390000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="6xH-kS-WU8"/>
+                                    <constraint firstAttribute="height" priority="800" constant="54" id="lCP-vW-gQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
+                                <state key="normal" title="Enable touch ID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enableBiometricSelected:" destination="ImH-v0-rya" eventType="touchUpInside" id="NgH-KS-BgM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can secure the app and log in faster using your fingerprint. You can also do this later from the App Preferences screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyD-iF-S1O">
+                                <rect key="frame" x="14" y="132" width="327" height="52.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touchId" translatesAutoresizingMaskIntoConstraints="NO" id="WeQ-GI-iHG">
+                                <rect key="frame" x="166" y="83.5" width="24" height="24"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-yY-jeL" userLabel="Top Header">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="15"/>
+                                <color key="backgroundColor" red="0.81312191489999996" green="0.90684753659999995" blue="0.87412375210000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="800" constant="15" id="sxV-bU-fNf"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="penguin" translatesAutoresizingMaskIntoConstraints="NO" id="rrx-aY-bok" customClass="RoundedImageView" customModule="The_General" customModuleProvider="target">
+                                <rect key="frame" x="147.5" y="-22.5" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="800" constant="60" id="aXr-Ck-jBx"/>
+                                    <constraint firstAttribute="width" secondItem="rrx-aY-bok" secondAttribute="height" multiplier="1:1" id="nUQ-Iw-fPe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zh8-EO-6zS">
+                                <rect key="frame" x="98" y="45.5" width="160.5" height="28"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeE-Go-JOz">
+                                <rect key="frame" x="12" y="184.5" width="331" height="24.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-JI-WVe">
+                                <rect key="frame" x="0.0" y="107.5" width="355" height="24.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="800" constant="10" id="Tie-bW-0Sg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9324148297" green="0.96510642769999999" blue="0.95270687340000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kl0-DB-hhz" secondAttribute="bottom" priority="800" constant="10" id="9XF-e7-4Hw"/>
+                            <constraint firstItem="UyD-iF-S1O" firstAttribute="top" secondItem="Bwc-JI-WVe" secondAttribute="bottom" id="Bdx-7S-ZSq"/>
+                            <constraint firstItem="Bwc-JI-WVe" firstAttribute="top" secondItem="WeQ-GI-iHG" secondAttribute="bottom" id="CO4-vv-dmg"/>
+                            <constraint firstItem="Bwc-JI-WVe" firstAttribute="height" secondItem="xeE-Go-JOz" secondAttribute="height" id="R7G-fq-sbz"/>
+                            <constraint firstItem="hgk-yY-jeL" firstAttribute="leading" secondItem="59u-e6-1zM" secondAttribute="leading" id="Ryh-nu-pWp"/>
+                            <constraint firstItem="xeE-Go-JOz" firstAttribute="top" secondItem="UyD-iF-S1O" secondAttribute="bottom" id="TE6-Sa-OVm"/>
+                            <constraint firstAttribute="bottom" secondItem="kl0-DB-hhz" secondAttribute="bottom" priority="750" constant="32" id="YPg-7p-9ew"/>
+                            <constraint firstItem="Zh8-EO-6zS" firstAttribute="centerX" secondItem="59u-e6-1zM" secondAttribute="centerX" id="Yud-bC-8GO"/>
+                            <constraint firstAttribute="trailing" secondItem="UyD-iF-S1O" secondAttribute="trailing" constant="14" id="ZnW-Kz-eZx"/>
+                            <constraint firstItem="UyD-iF-S1O" firstAttribute="leading" secondItem="59u-e6-1zM" secondAttribute="leading" constant="14" id="b2V-HB-qFm"/>
+                            <constraint firstItem="WeQ-GI-iHG" firstAttribute="centerX" secondItem="59u-e6-1zM" secondAttribute="centerX" id="dpZ-zo-C1W"/>
+                            <constraint firstItem="Zh8-EO-6zS" firstAttribute="top" secondItem="rrx-aY-bok" secondAttribute="bottom" priority="750" constant="8" id="fWP-Y0-Y8N"/>
+                            <constraint firstAttribute="trailing" secondItem="hgk-yY-jeL" secondAttribute="trailing" id="lLJ-UW-muq"/>
+                            <constraint firstItem="rrx-aY-bok" firstAttribute="centerX" secondItem="59u-e6-1zM" secondAttribute="centerX" id="nWK-ZE-WOZ"/>
+                            <constraint firstItem="Zh8-EO-6zS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rrx-aY-bok" secondAttribute="bottom" id="o5V-yj-Msc"/>
+                            <constraint firstItem="kl0-DB-hhz" firstAttribute="centerX" secondItem="59u-e6-1zM" secondAttribute="centerX" id="p3S-Ou-hfc"/>
+                            <constraint firstAttribute="trailing" secondItem="Bwc-JI-WVe" secondAttribute="trailing" id="q3M-FF-48d"/>
+                            <constraint firstItem="Bwc-JI-WVe" firstAttribute="leading" secondItem="59u-e6-1zM" secondAttribute="leading" id="qth-JP-h2v"/>
+                            <constraint firstItem="hgk-yY-jeL" firstAttribute="top" secondItem="59u-e6-1zM" secondAttribute="top" id="rLf-jU-8Be"/>
+                            <constraint firstItem="rrx-aY-bok" firstAttribute="centerY" secondItem="hgk-yY-jeL" secondAttribute="centerY" id="sTQ-gU-lah"/>
+                            <constraint firstItem="WeQ-GI-iHG" firstAttribute="top" secondItem="Zh8-EO-6zS" secondAttribute="bottom" priority="750" constant="10" id="soW-NP-51O"/>
+                            <constraint firstItem="kl0-DB-hhz" firstAttribute="top" secondItem="xeE-Go-JOz" secondAttribute="bottom" id="xsr-ae-E0b"/>
+                            <constraint firstItem="WeQ-GI-iHG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Zh8-EO-6zS" secondAttribute="bottom" priority="800" constant="5" id="yYM-qH-PfJ"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="badgeImageView" destination="rrx-aY-bok" id="6wh-pn-k9d"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="59u-e6-1zM" firstAttribute="leading" secondItem="lZd-ch-HuC" secondAttribute="leading" constant="10" id="7mZ-Y9-Qg1"/>
+                    <constraint firstItem="59u-e6-1zM" firstAttribute="top" secondItem="lZd-ch-HuC" secondAttribute="topMargin" constant="23" id="BiX-Cn-eZi"/>
+                    <constraint firstAttribute="trailing" secondItem="59u-e6-1zM" secondAttribute="trailing" constant="10" id="ROs-Zh-Bcu"/>
+                    <constraint firstItem="rrx-aY-bok" firstAttribute="top" secondItem="lZd-ch-HuC" secondAttribute="top" constant="11.5" id="dew-kb-3vy"/>
+                    <constraint firstAttribute="trailing" secondItem="xeE-Go-JOz" secondAttribute="trailing" constant="22" id="eVU-hV-gfF"/>
+                    <constraint firstItem="xeE-Go-JOz" firstAttribute="leading" secondItem="lZd-ch-HuC" secondAttribute="leading" constant="22" id="hdr-uj-XWA"/>
+                    <constraint firstAttribute="bottom" secondItem="59u-e6-1zM" secondAttribute="bottom" constant="20.5" id="lQS-CI-Omm"/>
+                    <constraint firstItem="59u-e6-1zM" firstAttribute="centerX" secondItem="lZd-ch-HuC" secondAttribute="centerX" id="qyO-QP-pBE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="UyD-iF-S1O" id="p0f-n5-8Xr"/>
+                <outlet property="enableButton" destination="kl0-DB-hhz" id="CRy-vJ-0YS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="penguin" width="50" height="50"/>
+        <image name="touchId" width="24" height="24"/>
+    </resources>
+</document>

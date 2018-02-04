@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="94" id="VmR-lN-Mfc" customClass="RoadsideAssistanceCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="657" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VmR-lN-Mfc" id="T88-Fe-Svv">
+                <rect key="frame" x="0.0" y="0.0" width="657" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9F-GX-nBS">
+                        <rect key="frame" x="0.0" y="0.0" width="657" height="1"/>
+                        <color key="backgroundColor" red="0.89782440662384033" green="0.90195995569229126" blue="0.90598070621490479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="4fV-Sj-kZC"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1" id="WmC-8i-GeG"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="hs3-28-Bs4"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px_roadside_assitance" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-ee-FA8">
+                        <rect key="frame" x="20" y="19.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="pD9-yF-6Mw"/>
+                            <constraint firstAttribute="width" constant="24" id="rEF-1Y-gYC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roadside assistance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HA-e9-f0V">
+                        <rect key="frame" x="54" y="21.5" width="135" height="20"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                        <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csg-sO-IRN">
+                        <rect key="frame" x="199" y="14" width="133" height="34"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <state key="normal" title="1 (XXX) XXX-XXXX">
+                            <color key="titleColor" red="0.0016536357580000001" green="0.47759324310000001" blue="0.32568439840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTouchPhoneNumberButton:" destination="VmR-lN-Mfc" eventType="touchUpInside" id="P55-M5-rPL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q9F-GX-nBS" firstAttribute="top" secondItem="T88-Fe-Svv" secondAttribute="top" id="3R9-fN-3v1"/>
+                    <constraint firstItem="Q9F-GX-nBS" firstAttribute="leading" secondItem="T88-Fe-Svv" secondAttribute="leading" id="Lzi-Sr-v53"/>
+                    <constraint firstItem="csg-sO-IRN" firstAttribute="baseline" secondItem="9HA-e9-f0V" secondAttribute="baseline" id="QNU-FS-dOE"/>
+                    <constraint firstItem="l5o-ee-FA8" firstAttribute="leading" secondItem="T88-Fe-Svv" secondAttribute="leading" constant="20" id="SzD-a6-SPI"/>
+                    <constraint firstItem="csg-sO-IRN" firstAttribute="leading" secondItem="9HA-e9-f0V" secondAttribute="trailing" constant="10" id="WwI-hg-OB8"/>
+                    <constraint firstItem="9HA-e9-f0V" firstAttribute="centerY" secondItem="l5o-ee-FA8" secondAttribute="centerY" id="XEx-pL-VWR"/>
+                    <constraint firstItem="9HA-e9-f0V" firstAttribute="leading" secondItem="l5o-ee-FA8" secondAttribute="trailing" constant="10" id="eOg-Ti-VkU"/>
+                    <constraint firstAttribute="bottom" secondItem="l5o-ee-FA8" secondAttribute="bottom" constant="20" id="kSe-bU-3hN"/>
+                    <constraint firstItem="l5o-ee-FA8" firstAttribute="top" secondItem="T88-Fe-Svv" secondAttribute="top" constant="20" id="skQ-p3-dga"/>
+                    <constraint firstAttribute="trailing" secondItem="Q9F-GX-nBS" secondAttribute="trailing" id="soT-Lu-XuO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneNumberButton" destination="csg-sO-IRN" id="9Oj-Gb-Kjy"/>
+            </connections>
+            <point key="canvasLocation" x="60.5" y="-146"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="24px_roadside_assitance" width="24" height="24"/>
+    </resources>
+</document>

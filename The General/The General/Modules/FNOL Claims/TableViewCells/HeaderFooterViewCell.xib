@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="HeaderFooterViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle Info?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFQ-TN-JFM">
+                        <rect key="frame" x="15" y="8" width="180" height="44"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAD-CD-JDE" customClass="CustomSegmentControl" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="197" y="8" width="116" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Bf2-2l-eu0"/>
+                            <constraint firstAttribute="width" constant="116" id="mas-Sy-grB"/>
+                        </constraints>
+                        <connections>
+                            <action selector="segmentValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="dc6-E8-W0o"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sFQ-TN-JFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Bp0-hF-Y32"/>
+                    <constraint firstItem="sFQ-TN-JFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="E0k-rl-xll"/>
+                    <constraint firstItem="jAD-CD-JDE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="I4b-UN-HUJ"/>
+                    <constraint firstAttribute="bottom" secondItem="sFQ-TN-JFM" secondAttribute="bottom" constant="7.5" id="JLr-VX-sJW"/>
+                    <constraint firstItem="sFQ-TN-JFM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="R9Q-HL-Cpe"/>
+                    <constraint firstAttribute="trailing" secondItem="jAD-CD-JDE" secondAttribute="trailing" constant="7" id="Roz-88-TdB"/>
+                    <constraint firstItem="jAD-CD-JDE" firstAttribute="leading" secondItem="sFQ-TN-JFM" secondAttribute="trailing" constant="2" id="auC-vP-Bfs"/>
+                    <constraint firstAttribute="bottom" secondItem="jAD-CD-JDE" secondAttribute="bottom" constant="7.5" id="beL-5Q-Qft"/>
+                    <constraint firstItem="sFQ-TN-JFM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="pdz-Zs-cgv"/>
+                    <constraint firstAttribute="bottom" secondItem="sFQ-TN-JFM" secondAttribute="bottom" constant="7.5" id="upu-55-v0Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellSegmentControl" destination="jAD-CD-JDE" id="Kfk-JQ-aiZ"/>
+                <outlet property="titleLabel" destination="sFQ-TN-JFM" id="0pG-mT-zTm"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

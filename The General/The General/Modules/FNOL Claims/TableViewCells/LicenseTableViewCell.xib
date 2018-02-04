@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="KGk-i7-Jjw" customClass="LicenseTableViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="150.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c3N-4C-E6k">
+                        <rect key="frame" x="200" y="8" width="135" height="135"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="c3N-4C-E6k" secondAttribute="height" multiplier="1:1" id="S8L-gb-Emn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="36px_x-circle" translatesAutoresizingMaskIntoConstraints="NO" id="0zB-81-Xxv">
+                        <rect key="frame" x="290" y="99.5" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="qEp-O4-Dc0"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="License number" adjustsFontForContentSizeCategory="YES" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pKi-gO-hpA">
+                        <rect key="frame" x="12" y="11" width="180" height="22"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pKi-gO-hpA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="6t1-X8-PAK"/>
+                    <constraint firstItem="c3N-4C-E6k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="B7U-7p-djK"/>
+                    <constraint firstItem="c3N-4C-E6k" firstAttribute="leading" secondItem="pKi-gO-hpA" secondAttribute="trailing" constant="8" id="D47-sE-HUU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0zB-81-Xxv" secondAttribute="bottom" constant="4.5" id="Ip2-wb-qam"/>
+                    <constraint firstAttribute="trailing" secondItem="c3N-4C-E6k" secondAttribute="trailing" constant="8" id="KEX-RB-9Sg"/>
+                    <constraint firstItem="pKi-gO-hpA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MNu-pI-1Ha"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0zB-81-Xxv" secondAttribute="trailing" constant="1" id="lwX-4t-1Zp"/>
+                    <constraint firstAttribute="bottom" secondItem="c3N-4C-E6k" secondAttribute="bottom" constant="7.5" id="tzr-Mj-952"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="deleteImage" destination="0zB-81-Xxv" id="Gf2-bP-EV0"/>
+                <outlet property="itemImageView" destination="c3N-4C-E6k" id="N4J-5g-wr7"/>
+                <outlet property="valueTextField" destination="pKi-gO-hpA" id="M5B-40-Lwl"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="67.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="36px_x-circle" width="36" height="36"/>
+    </resources>
+</document>

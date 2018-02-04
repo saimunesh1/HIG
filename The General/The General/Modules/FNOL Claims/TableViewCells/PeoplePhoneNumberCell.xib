@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="52" id="KGk-i7-Jjw" customClass="PeoplePhoneNumberCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJi-9Y-Puu">
+                        <rect key="frame" x="12" y="16" width="112" height="19"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="M0K-E7-ZiM">
+                        <rect key="frame" x="136" y="14.5" width="172" height="22"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mJi-9Y-Puu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="6xt-xZ-GKn"/>
+                    <constraint firstItem="mJi-9Y-Puu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="BGK-HM-P5D"/>
+                    <constraint firstAttribute="bottom" secondItem="mJi-9Y-Puu" secondAttribute="bottom" constant="16.5" id="KN8-L6-yUm"/>
+                    <constraint firstAttribute="trailing" secondItem="M0K-E7-ZiM" secondAttribute="trailing" constant="12" id="gEy-Cl-YaZ"/>
+                    <constraint firstItem="M0K-E7-ZiM" firstAttribute="centerY" secondItem="mJi-9Y-Puu" secondAttribute="centerY" id="vut-si-g0f"/>
+                    <constraint firstItem="M0K-E7-ZiM" firstAttribute="leading" secondItem="mJi-9Y-Puu" secondAttribute="trailing" constant="12" id="xM8-Rj-iht"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="phoneNumberField" destination="M0K-E7-ZiM" id="sHU-0r-TTf"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="56"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SlidableAlertView" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="24px__check" translatesAutoresizingMaskIntoConstraints="NO" id="wvj-hB-f1y">
+                    <rect key="frame" x="16" y="15" width="24" height="24"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0D-Gq-Pel">
+                    <rect key="frame" x="50" y="11" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Your payment of $108.38 was sent. Allow 24 hours for your payment to be processed." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izR-3P-tGh">
+                    <rect key="frame" x="50" y="16" width="309" height="65.5"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="izR-3P-tGh" firstAttribute="top" secondItem="X0D-Gq-Pel" secondAttribute="bottom" constant="5" id="0M6-OG-luq"/>
+                <constraint firstItem="izR-3P-tGh" firstAttribute="leading" secondItem="wvj-hB-f1y" secondAttribute="trailing" constant="10" id="Lvp-wr-XG9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="izR-3P-tGh" secondAttribute="trailing" priority="900" constant="16" id="OL3-oQ-ahU"/>
+                <constraint firstItem="X0D-Gq-Pel" firstAttribute="leading" secondItem="wvj-hB-f1y" secondAttribute="trailing" constant="10" id="YFe-Zl-ei1"/>
+                <constraint firstItem="wvj-hB-f1y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="am3-Du-dXp"/>
+                <constraint firstItem="wvj-hB-f1y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="cbw-CF-j5z"/>
+                <constraint firstItem="X0D-Gq-Pel" firstAttribute="top" secondItem="wvj-hB-f1y" secondAttribute="top" constant="-4" id="ks4-kQ-n8B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="wvj-hB-f1y" id="qeQ-Jz-RxE"/>
+                <outlet property="messageLabel" destination="izR-3P-tGh" id="zUu-Ry-Bld"/>
+                <outlet property="titleLabel" destination="X0D-Gq-Pel" id="bJg-uy-Rkj"/>
+            </connections>
+            <point key="canvasLocation" x="9.5" y="-285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="24px__check" width="24" height="24"/>
+    </resources>
+</document>

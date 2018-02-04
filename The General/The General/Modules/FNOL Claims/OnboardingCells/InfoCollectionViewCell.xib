@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="LcG-xg-RgN" customClass="InfoCollectionViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McM-Yj-H95">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="440"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gather-info" highlightedImage="gather-info" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gzd-5L-6eM">
+                                <rect key="frame" x="82" y="35" width="136" height="64"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gather Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="8fH-pF-QIL">
+                                <rect key="frame" x="8" y="120" width="284" height="35"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV4-lf-TCD">
+                                <rect key="frame" x="13" y="158" width="274" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="jhU-ct-69W"/>
+                                </constraints>
+                                <string key="text">Exchange information with everyone involved, even pedestrians. Gather names, addresses, phone numbers and photos of insurance cards and drivers' licenses.</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUl-EH-8vy">
+                                <rect key="frame" x="65" y="383" width="170" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="jEQ-jC-d9w"/>
+                                    <constraint firstAttribute="width" constant="170" id="ztE-yi-8ne"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="18"/>
+                                <state key="normal" title="Add Photos">
+                                    <color key="titleColor" red="0.058823529409999999" green="0.47450980390000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTouchButton:" destination="LcG-xg-RgN" eventType="touchUpInside" id="55v-9Z-0e4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8fH-pF-QIL" secondAttribute="trailing" constant="8" id="651-Y3-sYD"/>
+                            <constraint firstAttribute="bottom" secondItem="qUl-EH-8vy" secondAttribute="bottom" constant="19" id="AEy-3s-f6k"/>
+                            <constraint firstAttribute="trailing" secondItem="Gzd-5L-6eM" secondAttribute="trailing" constant="82" id="D5r-du-qso"/>
+                            <constraint firstItem="Gzd-5L-6eM" firstAttribute="leading" secondItem="McM-Yj-H95" secondAttribute="leading" constant="82" id="Eee-ZI-Jeh"/>
+                            <constraint firstAttribute="trailing" secondItem="qUl-EH-8vy" secondAttribute="trailing" constant="65" id="FYX-nQ-heg"/>
+                            <constraint firstItem="8fH-pF-QIL" firstAttribute="leading" secondItem="McM-Yj-H95" secondAttribute="leading" constant="8" id="OfZ-39-rRJ"/>
+                            <constraint firstItem="SV4-lf-TCD" firstAttribute="leading" secondItem="McM-Yj-H95" secondAttribute="leading" constant="13" id="T7W-8p-wyh"/>
+                            <constraint firstItem="SV4-lf-TCD" firstAttribute="centerX" secondItem="qUl-EH-8vy" secondAttribute="centerX" id="Vbn-1c-Qmx"/>
+                            <constraint firstItem="qUl-EH-8vy" firstAttribute="leading" secondItem="McM-Yj-H95" secondAttribute="leading" constant="65" id="aNP-vG-V7f"/>
+                            <constraint firstItem="Gzd-5L-6eM" firstAttribute="top" secondItem="McM-Yj-H95" secondAttribute="top" constant="35" id="pSX-TJ-IUR"/>
+                            <constraint firstItem="8fH-pF-QIL" firstAttribute="top" secondItem="Gzd-5L-6eM" secondAttribute="bottom" constant="21" id="w0z-Ky-ouI"/>
+                            <constraint firstItem="SV4-lf-TCD" firstAttribute="top" secondItem="8fH-pF-QIL" secondAttribute="bottom" constant="3" id="zX0-Vf-BRt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="McM-Yj-H95" secondAttribute="bottom" id="NGg-z4-hLe"/>
+                <constraint firstItem="McM-Yj-H95" firstAttribute="top" secondItem="LcG-xg-RgN" secondAttribute="top" id="OHl-x2-79M"/>
+                <constraint firstItem="McM-Yj-H95" firstAttribute="leading" secondItem="LcG-xg-RgN" secondAttribute="leading" id="TOl-RY-oDe"/>
+                <constraint firstAttribute="trailing" secondItem="McM-Yj-H95" secondAttribute="trailing" id="mWN-Cv-7Li"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Qf3-R0-qPc"/>
+            <size key="customSize" width="297" height="182"/>
+            <connections>
+                <outlet property="cardButton" destination="qUl-EH-8vy" id="6TX-T3-IoC"/>
+                <outlet property="contentLabel" destination="SV4-lf-TCD" id="RI0-1K-D7h"/>
+                <outlet property="titleLabel" destination="8fH-pF-QIL" id="IHQ-B4-gcl"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="-55"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gather-info" width="136" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="DatePickerCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnj-8J-QWq">
+                        <rect key="frame" x="12" y="34" width="296" height="0.0"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Accident *" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k44-Fa-pRY">
+                        <rect key="frame" x="12" y="18" width="140" height="22"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                        <color key="textColor" red="0.2274509804" green="0.25490196079999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select date" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="nSC-cg-0ep">
+                        <rect key="frame" x="222" y="18" width="86" height="22"/>
+                        <color key="textColor" red="0.2274509804" green="0.25490196079999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="1Zo-17-HW2">
+                        <rect key="frame" x="12" y="51" width="296" height="162"/>
+                        <date key="date" timeIntervalSinceReferenceDate="529951715.38519502">
+                            <!--2017-10-17 16:48:35 +0000-->
+                        </date>
+                        <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                            <!--1970-01-01 11:00:00 +0000-->
+                        </date>
+                        <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                            <!--2037-12-31 11:00:00 +0000-->
+                        </date>
+                        <locale key="locale" localeIdentifier="en_US"/>
+                        <connections>
+                            <action selector="datePickerActionWithSender:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Cq7-m6-kVT"/>
+                        </connections>
+                    </datePicker>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="nSC-cg-0ep" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="2Bu-5v-7TG"/>
+                    <constraint firstItem="Vnj-8J-QWq" firstAttribute="top" secondItem="nSC-cg-0ep" secondAttribute="bottom" constant="-6" id="5g3-oA-2a3"/>
+                    <constraint firstItem="1Zo-17-HW2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Gh8-uE-p1E"/>
+                    <constraint firstItem="k44-Fa-pRY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="KMg-jh-zlI"/>
+                    <constraint firstAttribute="trailing" secondItem="nSC-cg-0ep" secondAttribute="trailing" constant="12" id="Vsc-rw-v12"/>
+                    <constraint firstAttribute="trailing" secondItem="1Zo-17-HW2" secondAttribute="trailing" constant="12" id="XLW-r3-hB2"/>
+                    <constraint firstItem="Vnj-8J-QWq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="fYl-94-6C4"/>
+                    <constraint firstItem="1Zo-17-HW2" firstAttribute="top" secondItem="Vnj-8J-QWq" secondAttribute="bottom" constant="17" id="pSq-C4-kdH"/>
+                    <constraint firstAttribute="trailing" secondItem="Vnj-8J-QWq" secondAttribute="trailing" constant="12" id="qfL-WI-hVI"/>
+                    <constraint firstItem="nSC-cg-0ep" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k44-Fa-pRY" secondAttribute="trailing" constant="10" id="sI5-ez-a6y"/>
+                    <constraint firstItem="k44-Fa-pRY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="zBZ-6x-k1D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="datePicker" destination="1Zo-17-HW2" id="0O8-gx-R94"/>
+                <outlet property="errorLabel" destination="Vnj-8J-QWq" id="fj2-af-eKo"/>
+                <outlet property="titleLabel" destination="k44-Fa-pRY" id="4aa-fz-jjI"/>
+                <outlet property="valueField" destination="nSC-cg-0ep" id="1pV-Cy-FP7"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="37"/>
+        </tableViewCell>
+    </objects>
+</document>

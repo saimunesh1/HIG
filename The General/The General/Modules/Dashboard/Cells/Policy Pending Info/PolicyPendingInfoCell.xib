@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="317" id="5LM-eW-H6x" customClass="PolicyPendingInfoCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="317"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5LM-eW-H6x" id="TWi-e7-6Ug">
+                <rect key="frame" x="0.0" y="0.0" width="479" height="316.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h5M-py-4ex" userLabel="Policy # Stack View">
+                        <rect key="frame" x="176" y="37" width="126.5" height="119"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Policy #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-rB-9Kw">
+                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="119"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC-123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGc-eG-NaT">
+                                <rect key="frame" x="62.5" y="0.0" width="64" height="119"/>
+                                <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" red="0.0016536357580000001" green="0.47759324310000001" blue="0.32568439840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back, Klaus!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sn-34-jCM">
+                        <rect key="frame" x="177" y="15" width="125" height="16.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="12"/>
+                        <color key="textColor" red="0.2265202999" green="0.25439813729999999" blue="0.28770667309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKg-im-Rp4">
+                        <rect key="frame" x="12" y="181" width="455" height="1"/>
+                        <color key="backgroundColor" red="0.89782440662384033" green="0.90195995569229126" blue="0.90598070621490479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="EWc-ji-JDT"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24px__warning" translatesAutoresizingMaskIntoConstraints="NO" id="HnY-78-dUO">
+                        <rect key="frame" x="12" y="198" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="6Ed-EG-ZD4"/>
+                            <constraint firstAttribute="width" constant="24" id="fCn-BB-OLi"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xb-lH-7oH">
+                        <rect key="frame" x="12" y="295.5" width="455" height="1"/>
+                        <color key="backgroundColor" red="0.89782440659999996" green="0.90195995569999998" blue="0.90598070620000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9AQ-6c-kA0"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krf-WH-8hy">
+                        <rect key="frame" x="48" y="198" width="399" height="87.5"/>
+                        <string key="text">Your policy will be activated only after our underwriting department approves your application. This may take up to 72 hours from the time of the purchase.</string>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Krf-WH-8hy" firstAttribute="top" secondItem="HnY-78-dUO" secondAttribute="top" id="1ud-7d-ePP"/>
+                    <constraint firstItem="h5M-py-4ex" firstAttribute="centerX" secondItem="TWi-e7-6Ug" secondAttribute="centerX" id="9fb-EP-TAZ"/>
+                    <constraint firstItem="NKg-im-Rp4" firstAttribute="top" secondItem="h5M-py-4ex" secondAttribute="bottom" constant="25" id="IsA-tp-RIt"/>
+                    <constraint firstItem="Krf-WH-8hy" firstAttribute="leading" secondItem="HnY-78-dUO" secondAttribute="trailing" constant="12" id="MPI-rT-crS"/>
+                    <constraint firstItem="HnY-78-dUO" firstAttribute="leading" secondItem="NKg-im-Rp4" secondAttribute="leading" id="O16-Rq-dyt"/>
+                    <constraint firstItem="8sn-34-jCM" firstAttribute="centerX" secondItem="TWi-e7-6Ug" secondAttribute="centerX" id="OrO-vt-vHg"/>
+                    <constraint firstItem="8sn-34-jCM" firstAttribute="top" secondItem="TWi-e7-6Ug" secondAttribute="top" constant="15" id="T0V-M9-uSk"/>
+                    <constraint firstItem="NKg-im-Rp4" firstAttribute="leading" secondItem="TWi-e7-6Ug" secondAttribute="leading" constant="12" id="Wek-P2-Gmf"/>
+                    <constraint firstAttribute="trailing" secondItem="NKg-im-Rp4" secondAttribute="trailing" constant="12" id="aW2-Aa-YIH"/>
+                    <constraint firstItem="1Xb-lH-7oH" firstAttribute="top" secondItem="Krf-WH-8hy" secondAttribute="bottom" constant="10" id="bAK-u1-5IO"/>
+                    <constraint firstAttribute="bottom" secondItem="1Xb-lH-7oH" secondAttribute="bottom" constant="20" id="eIc-pp-HB2"/>
+                    <constraint firstItem="h5M-py-4ex" firstAttribute="top" secondItem="8sn-34-jCM" secondAttribute="bottom" constant="5" id="fpu-Dh-3bq"/>
+                    <constraint firstItem="HnY-78-dUO" firstAttribute="top" secondItem="NKg-im-Rp4" secondAttribute="bottom" constant="16" id="now-PM-sdA"/>
+                    <constraint firstItem="1Xb-lH-7oH" firstAttribute="leading" secondItem="TWi-e7-6Ug" secondAttribute="leading" constant="12" id="p02-Lx-UKY"/>
+                    <constraint firstAttribute="trailing" secondItem="1Xb-lH-7oH" secondAttribute="trailing" constant="12" id="t4A-QA-XuX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Krf-WH-8hy" secondAttribute="trailing" constant="12" id="tec-kP-OtL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="policyNumberLabel" destination="xGc-eG-NaT" id="d2a-N2-6WC"/>
+                <outlet property="warningImageView" destination="HnY-78-dUO" id="eyZ-Dd-mbH"/>
+                <outlet property="welcomeLabel" destination="8sn-34-jCM" id="gM2-gn-8e2"/>
+            </connections>
+            <point key="canvasLocation" x="-2.5" y="179.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="24px__warning" width="24" height="24"/>
+    </resources>
+</document>

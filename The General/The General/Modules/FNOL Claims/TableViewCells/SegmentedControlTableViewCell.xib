@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="SegmentedControlTableViewCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Did any of the airbags deploy?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="1b9-fH-mrC">
+                        <rect key="frame" x="12" y="15" width="176" height="41.5"/>
+                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0NM-Em-TBB" customClass="CustomSegmentControl" customModule="The_General" customModuleProvider="target">
+                        <rect key="frame" x="196" y="21" width="167" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="300-eZ-jGj"/>
+                            <constraint firstAttribute="width" constant="167" id="rED-Ia-Qy5"/>
+                        </constraints>
+                        <connections>
+                            <action selector="segmentValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="BkQ-EB-7NO"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0NM-Em-TBB" firstAttribute="leading" secondItem="1b9-fH-mrC" secondAttribute="trailing" constant="8" id="Ods-AV-h1M"/>
+                    <constraint firstItem="0NM-Em-TBB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pd0-dC-Qef"/>
+                    <constraint firstItem="1b9-fH-mrC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Qeq-8N-eHL"/>
+                    <constraint firstAttribute="trailing" secondItem="0NM-Em-TBB" secondAttribute="trailing" constant="12" id="e24-fd-Vbx"/>
+                    <constraint firstItem="1b9-fH-mrC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="mlf-0M-PD7"/>
+                    <constraint firstAttribute="bottom" secondItem="1b9-fH-mrC" secondAttribute="bottom" constant="15" id="ol1-Cv-vul"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellLabel" destination="1b9-fH-mrC" id="f0Q-h7-8gg"/>
+                <outlet property="cellSegmentControl" destination="0NM-Em-TBB" id="erC-HZ-GaM"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="72"/>
+        </tableViewCell>
+    </objects>
+</document>

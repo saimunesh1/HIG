@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kyr-MI-sEs" customClass="DriversHeaderCell" customModule="The_General" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kyr-MI-sEs" id="L9H-h0-eKx">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sej-XT-eQH">
+                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active drivers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-1W-wSN">
+                                <rect key="frame" x="20" y="12" width="162.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.22652029991149902" green="0.25439813733100891" blue="0.28770667314529419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AoD-1W-wSN" secondAttribute="trailing" constant="5" id="c9v-CI-4XL"/>
+                            <constraint firstItem="AoD-1W-wSN" firstAttribute="leading" secondItem="sej-XT-eQH" secondAttribute="leading" constant="20" id="jMi-7c-QAI"/>
+                            <constraint firstAttribute="height" constant="44" id="m7E-pK-FO3"/>
+                            <constraint firstItem="AoD-1W-wSN" firstAttribute="centerY" secondItem="sej-XT-eQH" secondAttribute="centerY" id="y5q-Bo-Tnr"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BcB-MS-d2N">
+                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicles covered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld0-Ig-Cad">
+                                <rect key="frame" x="0.0" y="12" width="167.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.22652029991149902" green="0.25439813733100891" blue="0.28770667314529419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ld0-Ig-Cad" secondAttribute="trailing" constant="20" id="Iau-Jo-3sd"/>
+                            <constraint firstItem="Ld0-Ig-Cad" firstAttribute="leading" secondItem="BcB-MS-d2N" secondAttribute="leading" id="QMO-Q3-QrF"/>
+                            <constraint firstItem="Ld0-Ig-Cad" firstAttribute="centerY" secondItem="BcB-MS-d2N" secondAttribute="centerY" id="Zyu-e2-8Vd"/>
+                            <constraint firstAttribute="height" constant="44" id="kqv-TD-l9L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sej-XT-eQH" firstAttribute="leading" secondItem="L9H-h0-eKx" secondAttribute="leading" id="4KD-Gy-wtu"/>
+                    <constraint firstItem="BcB-MS-d2N" firstAttribute="width" secondItem="sej-XT-eQH" secondAttribute="width" id="5i6-Id-dPt"/>
+                    <constraint firstItem="BcB-MS-d2N" firstAttribute="leading" secondItem="sej-XT-eQH" secondAttribute="trailing" id="Js3-pu-oLC"/>
+                    <constraint firstAttribute="bottom" secondItem="BcB-MS-d2N" secondAttribute="bottom" id="Rf1-rl-ALE"/>
+                    <constraint firstAttribute="trailing" secondItem="BcB-MS-d2N" secondAttribute="trailing" id="RsT-Ie-zug"/>
+                    <constraint firstItem="BcB-MS-d2N" firstAttribute="top" secondItem="L9H-h0-eKx" secondAttribute="top" id="a6k-zH-QKa"/>
+                    <constraint firstItem="sej-XT-eQH" firstAttribute="top" secondItem="L9H-h0-eKx" secondAttribute="top" id="flT-f2-VgF"/>
+                    <constraint firstAttribute="bottom" secondItem="sej-XT-eQH" secondAttribute="bottom" id="hS0-oj-uu7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="19" y="20"/>
+        </tableViewCell>
+    </objects>
+</document>
